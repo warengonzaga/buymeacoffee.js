@@ -2,6 +2,8 @@
 
 A simple but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
 
+---
+
 ## What is Buy Me A Coffee
 
 ...
@@ -40,11 +42,9 @@ BuyMeACoffeeJS is licensed under MIT - <https://opensource.org/licenses/MIT>
 
 ## Author
 
-BuyMeACoffeeJS is Developed and Maintained by **Waren Gonzaga**
+BuyMeACoffeeJS is Developed and Maintained by **[Waren Gonzaga](https://github.com/warengonzaga)**
 
-* **Facebook:** <https://facebook.com/warengonzagaofficial>
-* **Twitter:** <https://twitter.com/warengonzaga>
-* **Website:** <https://warengonzaga.com>
+[![Facebook](https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/warengonzagaofficial) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/warengonzaga) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/warengonzagaofficial) [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/warengonzaga)
 
 ---
 
