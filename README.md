@@ -6,8 +6,6 @@
 
 A simple but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
 
----
-
 ## What is Buy Me A Coffee
 
 Buy Me a Coffee is a simple, meaningful way to fund your creative work.
