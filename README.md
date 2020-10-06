@@ -1,12 +1,18 @@
 # BuyMeACoffee.JS [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://github.com/warengonzaga)
 
+<!-- [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js/) -->
+
+![Powered By](https://img.shields.io/badge/Status-Development-red.svg?style=for-the-badge) [![Github Star](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js)
+
 A simple but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
 
 ---
 
 ## What is Buy Me A Coffee
 
-...
+Buy Me a Coffee is a simple, meaningful way to fund your creative work.
+
+Without stitching together a bunch of apps like Patreon, Mailchimp, and a donate button — you can accept support, memberships, and build a direct relationship with your fans. [Create your account here](https://buymeacoff.ee/?via=WarenGonzaga).
 
 ## Usage
 
@@ -28,11 +34,11 @@ A simple but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee
 
 Wanna see other projects I made? Join today!
 
-[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner2)](https://discord.io/warengonzaga) [![Tracker CLI](https://discordapp.com/api/guilds/694612151444439081/widget.png?style=banner2)](https://discord.io/trackercli)
+[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner3)](https://discord.io/warengonzaga) [![Tracker CLI](https://discordapp.com/api/guilds/694612151444439081/widget.png?style=banner3)](https://discord.io/trackercli)
 
 ## Donate or Support
 
-If you love this project please consider to support the development by means of coffee. I spend and waste my time just to save your time! Be a sponsor or backer of this project. Just a cup of coffee!
+If you love this project please consider to support the development by means of coffee. I spend and waste my time just to save your time! Be a sponsor or backer of this project today. Just a cup of coffee!
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://buymeacoff.ee/warengonzaga)
 
