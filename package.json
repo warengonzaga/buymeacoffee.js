@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/WarenGonzaga/buymeacoffee.js/issues"
   },
-  "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme"
+  "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
