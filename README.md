@@ -2,6 +2,8 @@
 
 [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js/) [![Github Star](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js)
 
+![Github Banner](.github/img/buymeacoffeejs-github-banner.jpg)
+
 A simple and lightweight but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
 
 ## What is Buy Me A Coffee
