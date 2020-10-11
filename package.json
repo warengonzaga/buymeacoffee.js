@@ -36,5 +36,6 @@
     "gulp-header": "^2.0.9",
     "gulp-uglify-es": "^2.0.0",
     "readable-stream": "^3.6.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
