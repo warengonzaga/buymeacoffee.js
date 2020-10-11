@@ -1,8 +1,8 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
-  "main": "gulpfile.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "gulp"
   },
@@ -37,5 +37,5 @@
     "gulp-uglify-es": "^2.0.0",
     "readable-stream": "^3.6.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": { "registry": "https://registry.npmjs.org/" }
 }
