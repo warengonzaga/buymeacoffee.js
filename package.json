@@ -1,10 +1,10 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.0.0-alpha.1",
-  "description": "A simple but powerful Node.js client for Buy Me A Coffee API",
+  "version": "1.0.0-beta.1",
+  "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,15 @@
     "url": "https://github.com/WarenGonzaga/buymeacoffee.js/issues"
   },
   "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme",
+  "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-header": "^2.0.9",
+    "gulp-uglify-es": "^2.0.0",
+    "readable-stream": "^3.6.0"
   }
 }
