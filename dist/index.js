@@ -1,7 +1,7 @@
 /*!
  * BuyMeACoffeeJS - https://github.com/WarenGonzaga/buymeacoffee.js#readme
  * A simple and lightweight but powerful Node.js client for Buy Me A Coffee API
- * Version: 1.0.0
+ * Version: 1.0.5
  * Github: https://github.com/WarenGonzaga/buymeacoffee.js
  * Licensed Under The MIT License: http://opensource.org/licenses/MIT
  * Copyright (c) 2020 Waren Gonzaga
