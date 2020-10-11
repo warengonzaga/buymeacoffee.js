@@ -37,3 +37,5 @@ class BMC {
         })
     }
 }
+
+module.exports = BMC;

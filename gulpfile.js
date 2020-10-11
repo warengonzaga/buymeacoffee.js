@@ -17,7 +17,7 @@ const {
 // dev paths
 const path = {
     dist: "./dist",
-    scripts: "./src/*.js"
+    scripts: "./src/**/*.js"
 };
 
 // open source label
@@ -58,7 +58,7 @@ function minifyJS() {
 
 // add copyright label
 function copyright() {
-    return src([path.dist+"/*.js"], {allowEmpty: true})
+    return src([path.dist+"/**/*.js"], {allowEmpty: true})
       .pipe(header(data.banner, pkg))
       .pipe(dest([path.dist]));
   }

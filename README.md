@@ -35,6 +35,7 @@ First [get your personal access token here](http://developers.buymeacoffee.com/d
 After that, create your Javascript file. Example below.
 
 ```js
+const BMC = require('buymeacoffee.js'); // add BMC package
 const access = require('./coffee.json'); // load your token
 const coffee = new BMC(access.token); // add your token here
 
