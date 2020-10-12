@@ -1,6 +1,6 @@
 # BuyMeACoffee.JS [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://github.com/warengonzaga)
 
-[![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js/) [![Github Star](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js) [![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)](https://github.com/WarenGonzaga/buymeacoffee.js)
+![Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Stars](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Size](https://img.shields.io/github/size/warengonzaga/buymeacoffee.js/dist/index.js?color=green&style=for-the-badge) ![NPM](https://img.shields.io/npm/dw/buymeacoffee.js?color=red&style=for-the-badge) ![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)
 
 ![Github Banner](.github/img/buymeacoffeejs-github-banner.jpg)
 
@@ -104,7 +104,7 @@ BuyMeACoffeeJS is licensed under MIT - <https://opensource.org/licenses/MIT>
 
 BuyMeACoffeeJS is Developed and Maintained by **[Waren Gonzaga](https://github.com/warengonzaga)**
 
-[![Facebook](https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/warengonzagaofficial) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/warengonzaga) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/warengonzagaofficial) [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/warengonzaga)
+[![Facebook](https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/warengonzagaofficial) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/warengonzaga) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/warengonzagaofficial) [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/warengonzaga) [![DEV](https://img.shields.io/badge/DEV-%23000000.svg?&style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/warengonzaga)
 
 ---
 
