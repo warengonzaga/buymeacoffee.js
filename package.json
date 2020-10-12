@@ -1,6 +1,6 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "main": "dist/index.js",
   "scripts": {
@@ -11,14 +11,11 @@
     "url": "git+https://github.com/WarenGonzaga/buymeacoffee.js.git"
   },
   "keywords": [
-    "buy",
-    "me",
-    "a",
-    "coffee",
-    "node",
-    "js",
-    "client",
-    "api"
+    "buy","me","a","coffee",
+    "node","js","client","api",
+    "buymeacoffeejs","javascript","buymeacoffee","simple",
+    "lightweight","powerful","bmc","bmcjs",
+    "buymeacoffee.js","bmc.js","coffee"
   ],
   "author": "Waren Gonzaga",
   "license": "MIT",
