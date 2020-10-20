@@ -1,6 +1,6 @@
 # BuyMeACoffee.JS [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://github.com/warengonzaga)
 
-![Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Stars](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Size](https://img.shields.io/github/size/warengonzaga/buymeacoffee.js/dist/index.js?color=green&style=for-the-badge) ![NPM](https://img.shields.io/npm/dw/buymeacoffee.js?color=red&style=for-the-badge) ![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)
+![Version](https://img.shields.io/github/release/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Stars](https://img.shields.io/github/stars/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge) ![Size](https://img.shields.io/github/size/warengonzaga/buymeacoffee.js/dist/index.js?color=green&style=for-the-badge) ![NPM](https://img.shields.io/npm/dm/buymeacoffee.js?color=red&style=for-the-badge) ![License](https://img.shields.io/github/license/WarenGonzaga/buymeacoffee.js.svg?style=for-the-badge)
 
 ![Github Banner](.github/img/buymeacoffeejs-github-banner.jpg)
 
@@ -21,6 +21,12 @@ Without stitching together a bunch of apps like Patreon, Mailchimp, and a donate
 - Extras Data
 
 (Read the [Official Docs](http://developers.buymeacoffee.com))
+
+## Installation
+
+```bash
+npm install buymeacoffee.js
+```
 
 ## Usage
 
