@@ -4,18 +4,33 @@
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "main": "dist/index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WarenGonzaga/buymeacoffee.js.git"
   },
   "keywords": [
-    "buy","me","a","coffee",
-    "node","js","client","api",
-    "buymeacoffeejs","javascript","buymeacoffee","simple",
-    "lightweight","powerful","bmc","bmcjs",
-    "buymeacoffee.js","bmc.js","coffee"
+    "buy",
+    "me",
+    "a",
+    "coffee",
+    "node",
+    "js",
+    "client",
+    "api",
+    "buymeacoffeejs",
+    "javascript",
+    "buymeacoffee",
+    "simple",
+    "lightweight",
+    "powerful",
+    "bmc",
+    "bmcjs",
+    "buymeacoffee.js",
+    "bmc.js",
+    "coffee"
   ],
   "author": "Waren Gonzaga",
   "license": "MIT",
@@ -32,7 +47,11 @@
     "gulp-eslint": "^6.0.0",
     "gulp-header": "^2.0.9",
     "gulp-uglify-es": "^2.0.0",
+    "mocha": "^8.2.0",
+    "nock": "^13.0.4",
     "readable-stream": "^3.6.0"
   },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
