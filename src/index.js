@@ -3,8 +3,14 @@
  * by Waren Gonzaga
  */
 
-const { get } = require('request');
+const got = require('got');
+
 const baseURL = 'https://developers.buymeacoffee.com/api/v1';
+
+const get = got.extend({
+	prefixUrl: baseURL,
+	responseType: 'json'
+});
 
 class BMC {
     constructor(access_token) {
@@ -23,18 +29,15 @@ class BMC {
         this._sendRequest('extras', callback);
     }
 
-    _sendRequest(path, callback) {
-        const url = `${baseURL}/${path}`
-
-        get(url, {
-            'auth': {
-                'bearer': this.access_token
+    async _sendRequest(path, callback) {
+        const response = await get(path, {
+            headers: {
+                Authorization: 'Bearer ' + this.access_token,
             }
-        }, function (error, response, body) {
-            if (!error & response.statusCode === 200) {
-                callback(JSON.parse(body))
-            }                               
-        })
+        });
+        if (response.statusCode === 200) {
+            callback(response.body);
+        }                               
     }
 }
 
