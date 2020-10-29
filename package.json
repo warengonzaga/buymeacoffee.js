@@ -11,11 +11,25 @@
     "url": "git+https://github.com/WarenGonzaga/buymeacoffee.js.git"
   },
   "keywords": [
-    "buy","me","a","coffee",
-    "node","js","client","api",
-    "buymeacoffeejs","javascript","buymeacoffee","simple",
-    "lightweight","powerful","bmc","bmcjs",
-    "buymeacoffee.js","bmc.js","coffee"
+    "buy",
+    "me",
+    "a",
+    "coffee",
+    "node",
+    "js",
+    "client",
+    "api",
+    "buymeacoffeejs",
+    "javascript",
+    "buymeacoffee",
+    "simple",
+    "lightweight",
+    "powerful",
+    "bmc",
+    "bmcjs",
+    "buymeacoffee.js",
+    "bmc.js",
+    "coffee"
   ],
   "author": "Waren Gonzaga",
   "license": "MIT",
@@ -25,7 +39,7 @@
   "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme",
   "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
-    "request": "^2.88.2"
+    "got": "^11.8.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -34,5 +48,7 @@
     "gulp-uglify-es": "^2.0.0",
     "readable-stream": "^3.6.0"
   },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
