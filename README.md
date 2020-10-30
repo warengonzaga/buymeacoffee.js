@@ -19,6 +19,7 @@ Without stitching together a bunch of apps like Patreon, Mailchimp, and a donate
 - Supporters Data
 - Subscriptions Data
 - Extras Data
+- Supports NodeJS v10+ LTS
 
 (Read the [Official Docs](http://developers.buymeacoffee.com))
 
@@ -72,6 +73,43 @@ coffee.Supporters((data) => {
 
 I will add more features to this API Client as soon as I have time working on it.
 
+---
+
+## Used By
+
+- _[timbenniks2020-nuxt](https://github.com/timbenniks/timbenniks2020-nuxt)_
+- _Your project goes here_
+
+> Wanna see your project here? Let us know!
+
+## Related Projects
+
+- _[buymeacoffee-discord-bot](https://github.com/warengonzaga/buymeacoffee-discord-bot)_ (work in progress)
+- _[buymeacoffee-cli](https://github.com/warengonzaga/buymeacoffee-cli)_ (work in progress)
+- _[buymeacoffee-wp](https://github.com/warengonzaga/buymeacoffee-wp)_ (work in progress)
+
+---
+
+## Badges
+
+If your project uses buymeacoffee.js then you can add any of the following badges below to your project's readme file.
+
+### Flat Style
+
+[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+
+> **Markdown**
+>
+>```markdown
+>[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+>```
+> **HTML**
+>```html
+><a href="https://github.com/warengonzaga/buymeacoffee.js"><img src="https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="BuyMeACoffee.JS"></a>
+>```
+
+---
+
 ## Contributing
 
 Contributions are welcome, create a pull request to this repo and I will review your code. Please consider to submit your pull request to the ```dev``` branch. Thank you!
@@ -87,10 +125,6 @@ If you're facing a problem in using BuyMeACoffeeJS please let me know by creatin
 - Add CI to this project.
 
 ## Community
-
-Unofficial Discord Server
-
-[![BuyMeACoffee](https://discordapp.com/api/guilds/764424624032841748/widget.png?style=banner1)](https://discord.link/buymeacoffee)
 
 Wanna see other projects I made? Join today!
 
