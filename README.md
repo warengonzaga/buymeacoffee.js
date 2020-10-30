@@ -92,9 +92,57 @@ I will add more features to this API Client as soon as I have time working on it
 
 ## Badges
 
-If your project uses buymeacoffee.js then you can add any of the following badges below to your project's readme file.
+If your project uses buymeacoffee.js then you can add any of the following badges below to your project's readme file. For the badges I use [Shields.io](https://shields.io) API to create a custom badges for READMEs.
 
 ### Flat Style
+
+[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+
+> **Markdown**
+>
+>```markdown
+>[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+>```
+>
+> **HTML**
+>
+>```html
+><a href="https://github.com/warengonzaga/buymeacoffee.js"><img src="https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat&logo=buy-me-a-coffee&logoColor=black" alt="BuyMeACoffee.JS"></a>
+>```
+
+### Plastic Style
+
+[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=plastic&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+
+> **Markdown**
+>
+>```markdown
+>[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=plastic&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+>```
+>
+> **HTML**
+>
+>```html
+><a href="https://github.com/warengonzaga/buymeacoffee.js"><img src="https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=plastic&logo=buy-me-a-coffee&logoColor=black" alt="BuyMeACoffee.JS"></a>
+>```
+
+### Flat Square Style
+
+[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+
+> **Markdown**
+>
+>```markdown
+>[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
+>```
+>
+> **HTML**
+>
+>```html
+><a href="https://github.com/warengonzaga/buymeacoffee.js"><img src="https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="BuyMeACoffee.JS"></a>
+>```
+
+### For The Badge Style
 
 [![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
 
@@ -103,7 +151,9 @@ If your project uses buymeacoffee.js then you can add any of the following badge
 >```markdown
 >[![BuyMeACoffee.JS](https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://github.com/warengonzaga/buymeacoffee.js)
 >```
+>
 > **HTML**
+>
 >```html
 ><a href="https://github.com/warengonzaga/buymeacoffee.js"><img src="https://img.shields.io/badge/BuyMeACoffee.JS-%23ffdd00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="BuyMeACoffee.JS"></a>
 >```
@@ -117,12 +167,6 @@ Contributions are welcome, create a pull request to this repo and I will review 
 ## Issues
 
 If you're facing a problem in using BuyMeACoffeeJS please let me know by creating an issue in this github repository. I'm happy to help you! Don't forget to provide me some screenshot or error logs of it, thank you!
-
-## To Do
-
-- Advance way to retrieve data.
-- Improve development.
-- Add CI to this project.
 
 ## Community
 
