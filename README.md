@@ -6,6 +6,8 @@
 
 A simple and lightweight but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
 
+[![IssueHunt](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/r/WarenGonzaga/buymeacoffee.js)
+
 ## What is Buy Me A Coffee
 
 Buy Me a Coffee is a simple, meaningful way to fund your creative work.
@@ -178,7 +180,7 @@ Wanna see other projects I made? Join today!
 
 If you love this project please consider to support the development by means of coffee. I spend and waste my time just to save your time! Be a sponsor or backer of this project today. Just a cup of coffee!
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://buymeacoff.ee/warengonzaga)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://buymeacoff.ee/warengonzaga) [![Fund](https://img.shields.io/badge/Fund-IssueHunt-%2300A156.svg?style=for-the-badge)](https://issuehunt.io/r/WarenGonzaga/buymeacoffee.js)
 
 ## License
 
