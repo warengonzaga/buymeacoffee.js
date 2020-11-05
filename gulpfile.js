@@ -43,9 +43,9 @@ const data = {
 // lint js
 function lintJS() {
     return src(path.scripts)
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
 }
 
 // minify js
@@ -58,9 +58,10 @@ function minifyJS() {
 
 // add copyright label
 function copyright() {
-    return src([path.dist+"/**/*.js"], {allowEmpty: true})
+    return src(path.dist+"/**/*.js", {allowEmpty: true})
         .pipe(header(data.banner, pkg))
         .pipe(dest([path.dist]));
 }
 
+// gulp process
 exports.default = series(lintJS, minifyJS, copyright);
