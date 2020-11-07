@@ -3,8 +3,15 @@
  * by Waren Gonzaga
  */
 
-const { get } = require('request');
+const axios = require('axios');
+
 const baseURL = 'https://developers.buymeacoffee.com/api/v1';
+
+const requester = axios.create({
+	baseURL,
+    responseType: 'json',
+    validateStatus: (status) => status === 200
+});
 
 class BMC {
     constructor(access_token) {
@@ -23,18 +30,13 @@ class BMC {
         this._sendRequest('extras', callback);
     }
 
-    _sendRequest(path, callback) {
-        const url = `${baseURL}/${path}`
-
-        get(url, {
-            'auth': {
-                'bearer': this.access_token
+    async _sendRequest(path, callback) {
+        const response = await requester.get(path, {
+            headers: {
+                Authorization: 'Bearer ' + this.access_token,
             }
-        }, function (error, response, body) {
-            if (!error & response.statusCode === 200) {
-                callback(JSON.parse(body))
-            }                               
-        })
+        });
+        callback(response.data);                              
     }
 }
 

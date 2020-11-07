@@ -3,8 +3,8 @@
  * By Waren Gonzaga
  */
 
- // modules
-const { 
+// modules
+const {
     series, 
     src, 
     dest }      = require('gulp'),
@@ -24,28 +24,28 @@ const path = {
 const pkg = JSON.parse(fs.readFileSync('package.json'));
 const data = {
     banner: [
-      '/*!',
-      ' * BuyMeACoffeeJS - <%= homepage %>',
-      ' * <%= description %>',
-      ' * Version: <%= version %>',
-      ' * Github: <%= github %>',
-      ' * Licensed Under The MIT License: http://opensource.org/licenses/MIT',
-      ' * Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
-      ' *',
-      ' * Facebook: @warengonzagaofficial',
-      ' * Twitter: @warengonzaga',
-      ' * Github: @warengonzaga',
-      ' * Website: warengonzaga.com',
-      ' */\n\n',
+        '/*!',
+        ' * BuyMeACoffeeJS - <%= homepage %>',
+        ' * <%= description %>',
+        ' * Version: <%= version %>',
+        ' * Github: <%= github %>',
+        ' * Licensed Under The MIT License: http://opensource.org/licenses/MIT',
+        ' * Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
+        ' *',
+        ' * Facebook: @warengonzagaofficial',
+        ' * Twitter: @warengonzaga',
+        ' * Github: @warengonzaga',
+        ' * Website: warengonzaga.com',
+        ' */\n\n',
     ].join('\n'),
 };
 
 // lint js
 function lintJS() {
     return src(path.scripts)
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
 }
 
 // minify js
@@ -58,9 +58,10 @@ function minifyJS() {
 
 // add copyright label
 function copyright() {
-    return src([path.dist+"/**/*.js"], {allowEmpty: true})
-      .pipe(header(data.banner, pkg))
-      .pipe(dest([path.dist]));
-  }
+    return src(path.dist+"/**/*.js", {allowEmpty: true})
+        .pipe(header(data.banner, pkg))
+        .pipe(dest([path.dist]));
+}
 
+// gulp process
 exports.default = series(lintJS, minifyJS, copyright);
