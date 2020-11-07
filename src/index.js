@@ -3,13 +3,14 @@
  * by Waren Gonzaga
  */
 
-const got = require('got');
+const axios = require('axios');
 
 const baseURL = 'https://developers.buymeacoffee.com/api/v1';
 
-const get = got.extend({
-	prefixUrl: baseURL,
-	responseType: 'json'
+const requester = axios.create({
+	baseURL,
+    responseType: 'json',
+    validateStatus: (status) => status === 200
 });
 
 class BMC {
@@ -30,14 +31,12 @@ class BMC {
     }
 
     async _sendRequest(path, callback) {
-        const response = await get(path, {
+        const response = await requester.get(path, {
             headers: {
                 Authorization: 'Bearer ' + this.access_token,
             }
         });
-        if (response.statusCode === 200) {
-            callback(response.body);
-        }                               
+        callback(response.data);                              
     }
 }
 

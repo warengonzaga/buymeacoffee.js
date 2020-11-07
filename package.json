@@ -39,7 +39,7 @@
   "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme",
   "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
-    "got": "^11.8.0"
+    "axios": "^0.21.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
