@@ -1,32 +1,25 @@
 'use strict';
 
-const nock = require('nock');
-const {
-  baseURL
-} = require('../src/config');
+const requester = require('../src/requester');
+const moxios = require('moxios');
+
 const {
   supportersTemplate,
   subscriptionsTemplate,
   extrasTemplate
 } = require('./api-templates');
+
 const token = 'let-me-pass';
 const BMC = require('../src/index');
-let BMCAPIMock;
 
-beforeEach(() => {
-  BMCAPIMock = nock(baseURL, {
-    reqheaders: {
-      Authorization: 'Bearer ' + token,
-    }
-  });
-});
-
-afterEach(nock.cleanAll);
+beforeEach(() => moxios.install(requester));
+afterEach(() => moxios.uninstall(requester));
 
 test('Supporters retreival', done => {
-  BMCAPIMock
-    .get('/supporters')
-    .reply(200, supportersTemplate)
+  moxios.stubRequest('supporters', {
+    status: 200,
+    response: supportersTemplate
+  })
   const BMCInstance = new BMC(token);
   BMCInstance.Supporters((supportersData) => {
     expect(supportersData).toStrictEqual(supportersTemplate);
@@ -36,9 +29,10 @@ test('Supporters retreival', done => {
 
 
 test('Subscription retrieval', done => {
-  BMCAPIMock
-    .get('/subscriptions')
-    .reply(200, subscriptionsTemplate)
+  moxios.stubRequest('subscriptions', {
+    status: 200,
+    response: subscriptionsTemplate
+  })
   const BMCInstance = new BMC(token);
   BMCInstance.Subscriptions((subscriptions) => {
     expect(subscriptions).toStrictEqual(subscriptionsTemplate);
@@ -47,9 +41,10 @@ test('Subscription retrieval', done => {
 });
 
 test('Extras retrieval', done => {
-  BMCAPIMock
-    .get('/extras')
-    .reply(200, extrasTemplate)
+  moxios.stubRequest('extras', {
+    status: 200,
+    response: extrasTemplate
+  })
   const BMCInstance = new BMC(token);
   BMCInstance.Extras((extras) => {
     expect(extras).toStrictEqual(extrasTemplate);
