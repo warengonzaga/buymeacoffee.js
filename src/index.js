@@ -3,15 +3,7 @@
  * by Waren Gonzaga
  */
 
-const axios = require('axios');
-
-const baseURL = 'https://developers.buymeacoffee.com/api/v1';
-
-const requester = axios.create({
-	baseURL,
-    responseType: 'json',
-    validateStatus: (status) => status === 200
-});
+const requester = require('./requester');
 
 class BMC {
     constructor(access_token) {
@@ -36,7 +28,7 @@ class BMC {
                 Authorization: 'Bearer ' + this.access_token,
             }
         });
-        callback(response.data);                              
+        callback(response.data);                        
     }
 }
 
