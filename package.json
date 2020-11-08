@@ -4,7 +4,8 @@
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "main": "dist/index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,8 @@
     "gulp-eslint": "^6.0.0",
     "gulp-header": "^2.0.9",
     "gulp-uglify-es": "^2.0.0",
+    "jest": "^26.6.3",
+    "moxios": "^0.4.0",
     "readable-stream": "^3.6.0"
   },
   "publishConfig": {
