@@ -17,7 +17,7 @@ const {
 // dev paths
 const path = {
     dist: "./dist",
-    scripts: "./src/**/*.js"
+    scripts: "./source/**/*.js"
 };
 
 // open source label
