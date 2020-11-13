@@ -25,6 +25,8 @@ Without stitching together a bunch of apps like Patreon, Mailchimp, and a donate
 
 (Read the [Official Docs](http://developers.buymeacoffee.com))
 
+[![Rate on Openbase](https://badges.openbase.io/js/rating/buymeacoffee.js.svg)](https://openbase.io/js/buymeacoffee.js?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+
 ## Installation
 
 ```bash
