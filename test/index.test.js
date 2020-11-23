@@ -27,7 +27,6 @@ test('Supporters retreival', done => {
   });
 });
 
-
 test('Subscription retrieval', done => {
   moxios.stubRequest('subscriptions', {
     status: 200,
