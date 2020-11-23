@@ -208,7 +208,7 @@ If you're facing a problem in using BuyMeACoffeeJS please let me know by creatin
 
 Join to the official Buy Me a Coffee Discord community server!
 
-[![BMC Community](https://discordapp.com/api/guilds/750619856130539572/widget.png?style=banner3)](https://discord.gg/JAu2gwNS)
+[![BMC Community](https://discordapp.com/api/guilds/750619856130539572/widget.png?style=banner3)](https://discord.gg/GFBQvyEJ98)
 
 Wanna see other projects I made? Join today and become a member!
 
