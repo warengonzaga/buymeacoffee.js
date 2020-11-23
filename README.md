@@ -88,9 +88,11 @@ I will add more features to this API Client as soon as I have time working on it
 
 ## Related Projects
 
-- _[buymeacoffee-discord-bot](https://github.com/warengonzaga/buymeacoffee-discord-bot)_ (work in progress)
 - _[buymeacoffee-cli](https://github.com/warengonzaga/buymeacoffee-cli)_ (work in progress)
 - _[buymeacoffee-wp](https://github.com/warengonzaga/buymeacoffee-wp)_ (work in progress)
+- _[bmc-music-bot](https://github.com/warengonzaga/bmc-music-bot)_ (work in progress)
+- _[bmc-updates-bot](https://github.com/warengonzaga/bmc-updates-bot)_ (work in progress)
+- _[bmc-mod-bot](https://github.com/warengonzaga/bmc-mod-bot)_ (work in progress)
 
 ## Badges
 
