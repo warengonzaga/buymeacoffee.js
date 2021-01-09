@@ -1,3 +1,4 @@
 node_modules
 *.log
 .jshintrc
+.vscode/launch.json

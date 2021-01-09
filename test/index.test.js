@@ -15,39 +15,67 @@ const BMC = require('../src/index');
 beforeEach(() => moxios.install(requester));
 afterEach(() => moxios.uninstall(requester));
 
-test('Supporters retreival', done => {
+test('Supporters retreival', async () => {
   moxios.stubRequest('supporters', {
     status: 200,
     response: supportersTemplate
   })
   const BMCInstance = new BMC(token);
-  BMCInstance.Supporters((supportersData) => {
+  const supportersData = await BMCInstance.Supporters();
     expect(supportersData).toStrictEqual(supportersTemplate);
-    done();
-  });
+});
+test('Supporters retreival failure', async () => {
+  moxios.stubRequest('supporters', {
+    status: 400,
+    response: supportersTemplate
+  })
+  const BMCInstance = new BMC(token);
+  await expect(BMCInstance.Supporters()).rejects.toThrow();
+});
+test('Supporters retreival: no data', async () => {
+  const BMCResponse = { error: 'No supporters' };
+  moxios.stubRequest('supporters', {
+    status: 200,
+    response: BMCResponse
+  })
+  const BMCInstance = new BMC(token);
+  const supportersData = await BMCInstance.Supporters();
+  expect(supportersData).toStrictEqual(BMCResponse);
 });
 
-
-test('Subscription retrieval', done => {
+test('Subscription retrieval', async () => {
   moxios.stubRequest('subscriptions', {
     status: 200,
     response: subscriptionsTemplate
   })
   const BMCInstance = new BMC(token);
-  BMCInstance.Subscriptions((subscriptions) => {
+  const subscriptions = await BMCInstance.Subscriptions();
     expect(subscriptions).toStrictEqual(subscriptionsTemplate);
-    done();
-  });
 });
-
-test('Extras retrieval', done => {
+test('Subscription retreival failure', async () => {
+  moxios.stubRequest('subscriptions', {
+    status: 400,
+    response: subscriptionsTemplate
+  })
+  const BMCInstance = new BMC(token);
+  await expect(BMCInstance.Subscriptions()).rejects.toThrow();
+});
+test('Subscription retreival: no data', async () => {
+  const BMCResponse = { error: 'No subscriptions' };
+  moxios.stubRequest('subscriptions', {
+    status: 200,
+    response: BMCResponse
+  })
+  const BMCInstance = new BMC(token);
+  const subscriptions = await BMCInstance.Subscriptions();
+  expect(subscriptions).toStrictEqual(BMCResponse);
+});
+test('Extras retrieval', async () => {
   moxios.stubRequest('extras', {
     status: 200,
     response: extrasTemplate
   })
   const BMCInstance = new BMC(token);
-  BMCInstance.Extras((extras) => {
+  const extras = await BMCInstance.Extras();
     expect(extras).toStrictEqual(extrasTemplate);
-    done();
-  });
 });

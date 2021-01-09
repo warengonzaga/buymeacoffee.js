@@ -10,25 +10,28 @@ class BMC {
         this.access_token = access_token;
     }
 
-    Supporters(callback) {
-        this._sendRequest('supporters', callback);
+    Supporters() {
+        return this._sendRequest('supporters');
     }
 
-    Subscriptions(callback) {
-        this._sendRequest('subscriptions', callback);
+    Subscriptions() {
+        return this._sendRequest('subscriptions');
     }
 
-    Extras(callback) {
-        this._sendRequest('extras', callback);
+    Extras() {
+        return this._sendRequest('extras');
     }
 
-    async _sendRequest(path, callback) {
+    async _sendRequest(path) {
         const response = await requester.get(path, {
             headers: {
                 Authorization: 'Bearer ' + this.access_token,
-            }
+            },
+            validateStatus: function (status) {
+                return status >= 200 && status < 300; // default
+              }
         });
-        callback(response.data);                        
+        return response.data;                        
     }
 }
 
