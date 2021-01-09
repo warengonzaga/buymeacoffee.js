@@ -25,6 +25,8 @@ Without stitching together a bunch of apps like Patreon, Mailchimp, and a donate
 
 (Read the [Official Docs](http://developers.buymeacoffee.com))
 
+[![Rate on Openbase](https://badges.openbase.io/js/rating/buymeacoffee.js.svg)](https://openbase.io/js/buymeacoffee.js?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+
 ## Installation
 
 ```bash
@@ -86,9 +88,11 @@ I will add more features to this API Client as soon as I have time working on it
 
 ## Related Projects
 
-- _[buymeacoffee-discord-bot](https://github.com/warengonzaga/buymeacoffee-discord-bot)_ (work in progress)
 - _[buymeacoffee-cli](https://github.com/warengonzaga/buymeacoffee-cli)_ (work in progress)
 - _[buymeacoffee-wp](https://github.com/warengonzaga/buymeacoffee-wp)_ (work in progress)
+- _[bmc-music-bot](https://github.com/warengonzaga/bmc-music-bot)_ (work in progress)
+- _[bmc-updates-bot](https://github.com/warengonzaga/bmc-updates-bot)_ (work in progress)
+- _[bmc-mod-bot](https://github.com/warengonzaga/bmc-mod-bot)_ (work in progress)
 
 ## Badges
 
@@ -202,15 +206,19 @@ If you're facing a problem in using BuyMeACoffeeJS please let me know by creatin
 
 ## Community
 
-Wanna see other projects I made? Join today!
+Join to the official Buy Me a Coffee Discord community server!
 
-[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner2)](https://discord.io/warengonzaga) [![Tracker CLI](https://discordapp.com/api/guilds/694612151444439081/widget.png?style=banner2)](https://discord.io/trackercli)
+[![BMC Community](https://discordapp.com/api/guilds/750619856130539572/widget.png?style=banner3)](https://discord.gg/GFBQvyEJ98)
+
+Wanna see other projects I made? Join today and become a member!
+
+[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner2)](https://bmc.xyz/warengonzaga)
 
 ## Donate, Support or Fund
 
 If you love this project please consider to donate or support the development by means of coffee. You may also fund this project to maintain active and close more issues. Just a cup of coffee is enough to appreciate our hardwork.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://buymeacoff.ee/warengonzaga) [![Fund](https://img.shields.io/badge/Fund-IssueHunt-%2300A156.svg?style=for-the-badge)](https://issuehunt.io/r/WarenGonzaga/buymeacoffee.js)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://bmc.xyz/warengonzaga) [![Fund](https://img.shields.io/badge/Fund-IssueHunt-%2300A156.svg?style=for-the-badge)](https://issuehunt.io/r/WarenGonzaga/buymeacoffee.js)
 
 ## License
 

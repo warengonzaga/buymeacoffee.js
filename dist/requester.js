@@ -12,4 +12,4 @@
  * Website: warengonzaga.com
  */
 
-const requester=require("./requester");class BMC{constructor(e){this.access_token=e}Supporters(e){this._sendRequest("supporters",e)}Subscriptions(e){this._sendRequest("subscriptions",e)}Extras(e){this._sendRequest("extras",e)}async _sendRequest(e,s){s((await requester.get(e,{headers:{Authorization:"Bearer "+this.access_token}})).data)}}module.exports=BMC;
+"use strict";const axios=require("axios"),config=require("./config"),{baseURL:baseURL}=config,requester=axios.create({baseURL:baseURL,responseType:"json",validateStatus:e=>200===e});module.exports=requester;
