@@ -29,7 +29,7 @@ class BMC {
             },
             validateStatus: function (status) {
                 return status >= 200 && status < 300; // default
-              }
+            }
         });
         return response.data;                        
     }

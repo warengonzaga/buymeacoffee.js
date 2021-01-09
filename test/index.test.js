@@ -1,6 +1,6 @@
 'use strict';
 
-const requester = require('../src/requester');
+const requester = require('../source/requester');
 const moxios = require('moxios');
 
 const {
@@ -10,7 +10,7 @@ const {
 } = require('./api-templates');
 
 const token = 'let-me-pass';
-const BMC = require('../src/index');
+const BMC = require('../source/index');
 
 beforeEach(() => moxios.install(requester));
 afterEach(() => moxios.uninstall(requester));
