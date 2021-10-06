@@ -1,5 +1,5 @@
 /*!
- * Buy Me A Coffee JS | Gulpfile
+ * Buy Me a Coffee JS | Gulpfile
  * By Waren Gonzaga
  */
 
@@ -25,11 +25,11 @@ const pkg = JSON.parse(fs.readFileSync('package.json'));
 const data = {
     banner: [
         '/*!',
-        ' * BuyMeACoffeeJS - <%= homepage %>',
+        ' * BuyMeaCoffeeJS - <%= homepage %>',
         ' * <%= description %>',
         ' * Version: <%= version %>',
         ' * Github: <%= github %>',
-        ' * Licensed Under The MIT License: http://opensource.org/licenses/MIT',
+        ' * Licensed under The MIT License: http://opensource.org/licenses/MIT',
         ' * Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
         ' *',
         ' * Facebook: @warengonzagaofficial',
