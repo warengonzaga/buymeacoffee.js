@@ -18,6 +18,7 @@ body {
 	height: 100%;
 	display: grid;
 	place-items: center;
+	justify-content: center;
 }
 
 main {
@@ -32,13 +33,13 @@ main {
 	top: 5%;
 	width: 100%;
 	padding: 0 20px;
-	margin-top: 15%;
+	margin-top: 180px;
 	place-items: center;
 	text-align: center;
 }
 
 .site__h1 {
-	font-size: 48px;
+	font-size: 68px;
 	margin: 0px;
 	padding: 0px 10px;
 }
@@ -53,11 +54,11 @@ nav {
 	font-size: 24px;
 	color: #222;
 	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
 .site__nav:hover {
-	color: #FFDD00;
-	text-decoration: underline;
+	color: #747474;
 }
 
 .site__img {
@@ -69,24 +70,47 @@ nav {
 	color: #FFDD00;
 }
 
-.download-btn {
-	top: 30px;
-	position: relative;
-	background: #FFDD00;
-	color: #222;
-	padding: 15px 30px;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 50px;
-	letter-spacing: 0.08em;
-	font-size: 20px;
-	font-weight: 800;
-	transition: all 0.3s ease-out;
+.site--color-white {
+	color: #FFF;
 }
 
-.download-btn:hover {
-	color: #FFDD00;
-	background: #222;
+#install-script {
+	top: 8px;
+	color: #222;
+	position: relative;
+	color: #000;
+	padding: 13px 26px;
+	margin: 0px 100px;
+	text-decoration: none;
+	border-radius: 30px;
+	border: 3px solid #F0F0F0;
+	letter-spacing: 0.08em;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Liberation Mono", monospace;
+	--tw-shadow: 0 2.65546px 95px rgba(0,0,0,.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.install-script__text {
+	margin-right: 25px;
+}
+
+.install-script__copy {
+	filter: invert(71%) sepia(90%) saturate(561%) hue-rotate(359deg) brightness(105%) contrast(106%);
+}
+
+/* Filter is necessary to change the color of the copy button svg
+	To calculate another color: https://codepen.io/sosuke/pen/Pjoqqp */
+.install-script__copy:hover {
+	filter: invert(70%) sepia(6%) saturate(0%) hue-rotate(160deg) brightness(86%) contrast(93%);
+}
+
+.install-script__copy:active {
+	filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(352deg) brightness(112%) contrast(105%);
 }
 
 @media screen and (max-width: 700px) {
