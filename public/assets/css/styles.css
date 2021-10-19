@@ -1,0 +1,112 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	overflow: hidden;
+	color: #222;
+}
+
+body {
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	overflow: hidden;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#content {
+	display: grid;
+	left: 0;
+	top: 5%;
+	width: 100%;
+	padding: 0 20px;
+	margin-top: 15%;
+	place-items: center;
+	text-align: center;
+}
+
+.site__h1 {
+	font-size: 48px;
+	margin: 0px;
+	padding: 0px 10px;
+}
+
+nav {
+	margin: 20px 0 20px 0;
+	position: relative;
+}
+
+.site__nav {
+	text-decoration: none;
+	font-size: 24px;
+	color: #222;
+	margin-right: 20px;
+}
+
+.site__nav:hover {
+	color: #FFDD00;
+	text-decoration: underline;
+}
+
+.site__img {
+	width: 600px;
+	height: auto;
+}
+
+.site--color-yellow {
+	color: #FFDD00;
+}
+
+.download-btn {
+	top: 30px;
+	position: relative;
+	background: #FFDD00;
+	color: #222;
+	padding: 15px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 50px;
+	letter-spacing: 0.08em;
+	font-size: 20px;
+	font-weight: 800;
+	transition: all 0.3s ease-out;
+}
+
+.download-btn:hover {
+	color: #FFDD00;
+	background: #222;
+}
+
+@media screen and (max-width: 700px) {
+	.site__img {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.site__h1 {
+		margin-top: 80px;
+	}
+
+	.site__nav {
+		font-size: 18px;
+	}
+
+	.site__img {
+		max-width: 100%;
+		width: 100%;
+	}
+}
