@@ -96,19 +96,25 @@ nav {
 	--tw-shadow: 0 2.65546px 95px rgba(0,0,0,.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+#install-script > span:first-of-type {
+	margin-right: 1rem;
+}
 
 .install-script__text {
 	margin-right: 25px;
+	user-select: all;
 }
 
 .install-script__copy {
 	filter: invert(71%) sepia(90%) saturate(561%) hue-rotate(359deg) brightness(105%) contrast(106%);
+	transition: all 0.15s ease-out;
 }
 
 /* Filter is necessary to change the color of the copy button svg
 	To calculate another color: https://codepen.io/sosuke/pen/Pjoqqp */
 .install-script__copy:hover {
 	filter: invert(70%) sepia(6%) saturate(0%) hue-rotate(160deg) brightness(86%) contrast(93%);
+	cursor: pointer;
 }
 
 .install-script__copy:active {
