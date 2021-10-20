@@ -48,7 +48,7 @@ main {
 }
 
 nav {
-	margin: 15px 0 7px 0;
+	margin: 15px 0 15px 0;
 	position: relative;
 	display: flex;
 	flex-flow: row nowrap;
@@ -57,10 +57,10 @@ nav {
 
 .site__nav {
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 26px;
 	color: #222;
-	margin-bottom: 10px;
 	width: 100%;
+	transition: all 0.15s ease-out;
 }
 
 .site__nav:hover {
