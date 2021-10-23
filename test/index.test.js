@@ -22,7 +22,7 @@ test('Supporters retreival', async () => {
   })
   const BMCInstance = new BMC(token);
   const supportersData = await BMCInstance.Supporters();
-    expect(supportersData).toStrictEqual(supportersTemplate);
+  expect(supportersData).toStrictEqual(supportersTemplate);
 });
 test('Supporters retreival failure', async () => {
   moxios.stubRequest('supporters', {
@@ -50,7 +50,7 @@ test('Subscription retrieval', async () => {
   })
   const BMCInstance = new BMC(token);
   const subscriptions = await BMCInstance.Subscriptions();
-    expect(subscriptions).toStrictEqual(subscriptionsTemplate);
+  expect(subscriptions).toStrictEqual(subscriptionsTemplate);
 });
 test('Subscription retreival failure', async () => {
   moxios.stubRequest('subscriptions', {
@@ -77,5 +77,5 @@ test('Extras retrieval', async () => {
   })
   const BMCInstance = new BMC(token);
   const extras = await BMCInstance.Extras();
-    expect(extras).toStrictEqual(extrasTemplate);
+  expect(extras).toStrictEqual(extrasTemplate);
 });
