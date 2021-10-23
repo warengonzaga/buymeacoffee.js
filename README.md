@@ -2,10 +2,7 @@
 
 [![created by](https://img.shields.io/badge/created%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://github.com/warengonzaga) [![discord](https://img.shields.io/discord/659684980137656340?color=%235865F2&label=discord&logo=discord&logoColor=white&style=flat-square)](https://wrngnz.ga/discord) [![release](https://img.shields.io/github/release/warengonzaga/buymeacoffee.js.svg?style=flat-square)](https://github.com/warengonzaga/buymeacoffee.js/releases) [![star](https://img.shields.io/github/stars/warengonzaga/buymeacoffee.js.svg?style=flat-square)](https://github.com/warengonzaga/buymeacoffee.js/stargazers) ![size](https://img.shields.io/github/size/warengonzaga/buymeacoffee.js/dist/index.js?color=green&style=flat-square) ![npm downloads](https://img.shields.io/npm/dm/buymeacoffee.js?color=red&style=flat-square) [![license](https://img.shields.io/github/license/warengonzaga/buymeacoffee.js.svg?style=flat-square)](https://github.com/warengonzaga/buymeacoffee.js/blob/main/LICENSE)
 
-> **ANNOUNCEMENT** 📢
-> Nominate ([@WarenGonzaga](https://warengonzaga.com)) as **[GitHub Star](https://stars.github.com/nominate)**. If you appreciate his hardwork and dedication to open source.
-
----
+📢 Nominate ([@WarenGonzaga](https://warengonzaga.com)) as **[GitHub Star](https://stars.github.com/nominate)**. If you appreciate his hardwork and dedication to open source.
 
 [![repo banner](.github/img/buymeacoffeejs-github-banner.jpg)](https://buymeacoffee.js.org)
 
