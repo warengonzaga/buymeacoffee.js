@@ -115,6 +115,7 @@ nav {
 }
 #install-script > span:first-of-type {
 	margin-right: 1rem;
+	user-select: none;
 }
 
 .install-script__text {
