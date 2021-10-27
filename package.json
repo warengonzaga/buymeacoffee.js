@@ -1,6 +1,6 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "main": "dist/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/WarenGonzaga/buymeacoffee.js/issues"
   },
-  "homepage": "https://github.com/WarenGonzaga/buymeacoffee.js#readme",
+  "homepage": "https://docs.warengonzaga.com/buymeacoffeejs",
   "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
     "axios": "^0.21.1"
