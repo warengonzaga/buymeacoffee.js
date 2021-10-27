@@ -1,4 +1,6 @@
 const path = require("path");
+const webpack = require("webpack");
+const copyrightBanner = require("./banner");
 
 module.exports = {
     entry: "./source/index.js",
@@ -15,6 +17,9 @@ module.exports = {
         // path: './build',
         filename: "bundle.js"
     },
+    plugins: [
+        new webpack.BannerPlugin(copyrightBanner),
+    ],
     // mode: process.env.NODE_ENV === "production" ? "production" : "development"
     mode: "development"
 }
