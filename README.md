@@ -35,11 +35,11 @@ Read the project's [contributing guide](./CONTRIBUTING.md) for more info.
 
 ## 💬 Discussions
 
-For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/warengonzaga/suspend-wp/discussions)!
+For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/warengonzaga/buymeacoffee.js/discussions)!
 
 ## 🐛 Issues
 
-If you're facing a problem in using BuyMeaCoffeeJS please let me know by [creating an issue here](https://github.com/warengonzaga/suspend-wp/issues/new). I'm here to help you!
+If you're facing a problem in using BuyMeaCoffeeJS please let me know by [creating an issue here](https://github.com/warengonzaga/buymeacoffee.js/issues/new). I'm here to help you!
 
 ## 🍀 Sponsors and Supporters
 
@@ -69,7 +69,7 @@ BuyMeaCoffeeJS is licensed under [The MIT License](https://opensource.org/licens
 
 ## 📝 Author
 
-BuyMeaCoffeeJS is created by **[Waren Gonzaga](https://github.com/warengonzaga)**, with the help of awesome [contributors](https://github.com/warengonzaga/emily.css/graphs/contributors).
+BuyMeaCoffeeJS is created by **[Waren Gonzaga](https://github.com/warengonzaga)**, with the help of awesome [contributors](https://github.com/warengonzaga/buymeacoffee.js/graphs/contributors).
 
 ---
 
