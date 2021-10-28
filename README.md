@@ -6,7 +6,7 @@
 
 [![repo banner](.github/img/BuyMeACoffee.JS.png)](https://buymeacoffee.js.org)
 
-A simple and lightweight but powerful Node.js client for [Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API.
+A simple and lightweight but powerful **official Node.JS client** for **[Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API**.
 
 ## 😎 Demo
 
