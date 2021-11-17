@@ -4,7 +4,7 @@
 
 📢 Nominate ([@WarenGonzaga](https://warengonzaga.com)) as **[GitHub Star](https://stars.github.com/nominate)**. If you appreciate his hardwork and dedication to open source.
 
-[![repo banner](.github/img/BuyMeACoffee.JS.png)](https://buymeacoffee.js.org)
+[![repo banner](.github/img/repo_banner.png)](https://buymeacoffee.js.org)
 
 A simple and lightweight but powerful **official Node.JS client** for **[Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API**.
 
