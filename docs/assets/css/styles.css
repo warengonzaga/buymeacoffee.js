@@ -33,26 +33,46 @@ main {
 }
 
 #content {
-	display: flex;
-	align-items: center;
-	gap: 22px;
 	left: 0;
 	width: 100%;
 	padding: 0 20px;
-	justify-content: center;
-	text-align: center;
 }
 
-#content img {
+#header {
+	display: flex;
+	gap: 22px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: auto auto 15px auto
+}
+
+#header img {
 	height: 120px;
 	border-radius: 50%;
 }
 
+#content p {
+	font-size: 18px;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#content a {
+	color: #FFDD00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 900px) {
-	#content {
+	#header {
 		flex-direction: column;
 	}
-	#content > img {
+	#header > img {
 		box-shadow: 2px 2px 6px 2px #3e3e3e33;
 	}
 }
