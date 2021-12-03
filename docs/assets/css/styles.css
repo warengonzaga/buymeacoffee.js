@@ -28,17 +28,53 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	padding-bottom: 50px;
 }
 
 #content {
-	display: flex;
 	left: 0;
-	top: 5%;
 	width: 100%;
 	padding: 0 20px;
-	margin-top: 180px;
-	justify-content: center;
+}
+
+#header {
+	display: flex;
+	gap: 22px;
+	align-items: center;
 	text-align: center;
+	justify-content: center;
+	margin: auto auto 15px auto
+}
+
+#header img {
+	height: 120px;
+	border-radius: 50%;
+}
+
+#content p {
+	font-size: 18px;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#content a {
+	color: #FFDD00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+	#header {
+		flex-direction: column;
+	}
+	#header > img {
+		box-shadow: 2px 2px 6px 2px #3e3e3e33;
+	}
 }
 
 .site__h1 {
@@ -79,6 +115,7 @@ nav {
 	top: 8px;
 	color: #222;
 	position: relative;
+	margin-bottom:40px;
 	color: #000;
 	padding: 13px 26px;
 	margin: 0px 100px;
@@ -98,6 +135,7 @@ nav {
 }
 #install-script > span:first-of-type {
 	margin-right: 1rem;
+	user-select: none;
 }
 
 .install-script__text {
@@ -129,6 +167,16 @@ nav {
 
 	nav {
 		margin-bottom: 7px;
+	}
+
+	#content {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 135px;
+	}
+
+	#content img {
+		height: 12rem;
 	}
 
 	.site__nav {

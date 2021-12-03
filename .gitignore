@@ -1,7 +1,13 @@
+# deepcode
+.dccache
+
+# nodejs
 node_modules
+
+# parceljs
+.parcel-cache
+
+#misc
 *.log
 .jshintrc
 .vscode/launch.json
-
-# deepcode
-.dccache

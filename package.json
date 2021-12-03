@@ -1,10 +1,13 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
-  "main": "dist/index.js",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
   "scripts": {
-    "start": "gulp",
+    "watch": "parcel watch",
+    "build": "parcel build",
     "test": "jest"
   },
   "repository": {
@@ -37,22 +40,19 @@
   "bugs": {
     "url": "https://github.com/WarenGonzaga/buymeacoffee.js/issues"
   },
-  "homepage": "https://docs.warengonzaga.com/buymeacoffeejs",
+  "homepage": "https://buymeacoffee.js.org",
   "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
     "axios": "^0.21.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-eslint": "^6.0.0",
     "gulp-header": "^2.0.9",
-    "gulp-uglify-es": "^2.0.0",
     "jest": "^26.6.3",
     "moxios": "^0.4.0",
-    "readable-stream": "^3.6.0"
+    "parcel": "^2.0.1"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist/*"
