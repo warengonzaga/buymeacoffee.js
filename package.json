@@ -52,7 +52,7 @@
     "parcel": "^2.0.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "files": [
     "dist/*"
