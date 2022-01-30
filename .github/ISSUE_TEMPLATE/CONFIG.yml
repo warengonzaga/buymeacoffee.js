@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙏 Q&A Forum
+    url: https://github.com/warengonzaga/buymeacoffee.js/discussions/new?category=q-a
+    about: Have a question? Let us know!
+  - name: 🧠 Suggestions
+    url: https://github.com/WarenGonzaga/buymeacoffee.js/discussions/new?category=brainstorm
+    about: Have an idea or suggestion? Let us know!
+  - name: 📚 Documentation
+    url: https://docs.warengonzaga.com/buymeacoffeejs
+    about: Official Documentation for BuyMeaCoffeeJS
