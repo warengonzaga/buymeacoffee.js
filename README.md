@@ -39,7 +39,7 @@ For any questions, suggestions, ideas, or simply you want to share your experien
 
 ## 🐛 Issues
 
-Please report any issues and bugs by [creating a new issue here](https://github.com/warengonzaga/buymeacoffee.js/issues/new), also make sure you're reporting an issue that doesn't exist. Any help to improve the project would be appreciated. Thanks! 🙏✨
+Please report any issues and bugs by [creating a new issue here](https://github.com/warengonzaga/buymeacoffee.js/issues/new/choose), also make sure you're reporting an issue that doesn't exist. Any help to improve the project would be appreciated. Thanks! 🙏✨
 
 ## 🍀 Sponsors and Supporters
 
