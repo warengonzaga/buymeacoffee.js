@@ -1,26 +1,22 @@
-import {create as $lN7Lq$create} from "axios";
+import $f3Ts0$axios from "axios";
 
-var $e9036bc7e4b4ba73$exports = {};
-var $d4c91d26f8674b5c$exports = {};
-'use strict';
 
-var $2213b26d374442d6$exports = {};
-'use strict';
-$2213b26d374442d6$exports = {
-    baseURL: 'https://developers.buymeacoffee.com/api/v1'
+let $e5d4daa4fe781ca0$var$config = {
+    baseURL: "https://developers.buymeacoffee.com/api/v1",
+    test: 123
 };
+var $e5d4daa4fe781ca0$export$2e2bcd8739ae039 = $e5d4daa4fe781ca0$var$config;
 
 
-const { baseURL: $d4c91d26f8674b5c$var$baseURL  } = $2213b26d374442d6$exports;
-const $d4c91d26f8674b5c$var$requester = $lN7Lq$create({
-    baseURL: $d4c91d26f8674b5c$var$baseURL,
-    responseType: 'json',
+const $363d107d403bcf21$var$requester = $f3Ts0$axios.create({
+    baseURL: $e5d4daa4fe781ca0$export$2e2bcd8739ae039.baseURL,
+    responseType: "json",
     validateStatus: (status)=>status === 200
 });
-$d4c91d26f8674b5c$exports = $d4c91d26f8674b5c$var$requester;
+var $363d107d403bcf21$export$2e2bcd8739ae039 = $363d107d403bcf21$var$requester;
 
 
-class $e9036bc7e4b4ba73$var$BMC {
+class $a8e101027d325e52$export$2e2bcd8739ae039 {
     constructor(access_token){
         this.access_token = access_token;
     }
@@ -34,7 +30,7 @@ class $e9036bc7e4b4ba73$var$BMC {
         return this._sendRequest('extras');
     }
     async _sendRequest(path) {
-        const response = await $d4c91d26f8674b5c$exports.get(path, {
+        const response = await $363d107d403bcf21$export$2e2bcd8739ae039.get(path, {
             headers: {
                 Authorization: 'Bearer ' + this.access_token
             },
@@ -45,8 +41,7 @@ class $e9036bc7e4b4ba73$var$BMC {
         return response.data;
     }
 }
-$e9036bc7e4b4ba73$exports = $e9036bc7e4b4ba73$var$BMC;
 
 
-export {$e9036bc7e4b4ba73$exports as default};
+export {$a8e101027d325e52$export$2e2bcd8739ae039 as default};
 //# sourceMappingURL=module.js.map
