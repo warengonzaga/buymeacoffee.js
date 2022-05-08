@@ -3,9 +3,10 @@
  * by Waren Gonzaga
  */
 
-const requester = require('./requester');
+import  requester from './requester';
 
-class BMC {
+export default class BMC {
+    access_token: string
     constructor(access_token) {
         this.access_token = access_token;
     }
@@ -35,4 +36,3 @@ class BMC {
     }
 }
 
-module.exports = BMC;
