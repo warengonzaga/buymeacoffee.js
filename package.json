@@ -2,7 +2,7 @@
   "name": "buymeacoffee.js",
   "version": "1.2.2",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/warengonzaga/buymeacoffee.js.git"
+    "url": "git+https://github.com/WarenGonzaga/buymeacoffee.js.git"
   },
   "keywords": [
     "buy",
@@ -38,20 +38,27 @@
   "author": "Waren Gonzaga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/warengonzaga/buymeacoffee.js/issues"
+    "url": "https://github.com/WarenGonzaga/buymeacoffee.js/issues"
   },
   "homepage": "https://buymeacoffee.js.org",
-  "github": "https://github.com/warengonzaga/buymeacoffee.js",
+  "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
-    "axios": "^0.21.1"
+    "@types/moxios": "^0.4.15",
+    "axios": "^0.27.2",
+    "moxios": "^0.4.0",
+    "source-map-loader": "^3.0.1",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.7.0"
   },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "moxios": "^0.4.0",
-    "parcel": "^2.0.1"
+    "@types/jest": "^27.5.0",
+    "gulp-header": "^2.0.9",
+    "jest": "^28.0.0",
+    "parcel": "^2.0.1",
+    "ts-jest": "^28.0.2"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist/*"
