@@ -1,12 +1,9 @@
-/**
- * Buy Me A Coffee JS | Main File
- * by Waren Gonzaga
- */
-
 import requester from "./requester";
 
 export default class BMC {
+
   access_token: string;
+  
   constructor(access_token) {
     this.access_token = access_token;
   }

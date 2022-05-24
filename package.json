@@ -55,7 +55,8 @@
     "gulp-header": "^2.0.9",
     "jest": "^28.0.0",
     "parcel": "^2.0.1",
-    "ts-jest": "^28.0.2"
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.7.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
