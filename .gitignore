@@ -7,6 +7,15 @@ node_modules
 # parceljs
 .parcel-cache
 
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 #misc
 *.log
 .jshintrc
