@@ -1,6 +1,6 @@
 {
   "name": "buymeacoffee.js",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
   "source": "src/index.ts",
   "main": "dist/main.js",
