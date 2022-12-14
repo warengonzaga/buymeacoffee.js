@@ -25,7 +25,7 @@ Check out the official and complete documentation here.
 
 Contributions are welcome, create a pull request to this repo and I will review your code. Please consider to submit your pull request to the `dev` branch. Thank you!
 
-Read the project's [contributing guide](./CONTRIBUTING.md) for more info.
+Read the project's [contributing guide](./contributing.md) for more info.
 
 ## 💬 Discussions
 
@@ -54,7 +54,7 @@ Join to my growing tech community and get the latest updates!
 
 ## 📋 Code of Conduct
 
-Read the project's [code of conduct](./CODE_OF_CONDUCT.md).
+Read the project's [code of conduct](./code_of_conduct.md).
 
 ## 📃 License
 
@@ -68,4 +68,4 @@ BuyMeaCoffeeJS is created by **[Waren Gonzaga](https://github.com/warengonzaga)*
 
 ---
 
-💻💖☕ by [Waren Gonzaga](https://warengonzaga.com) | [He is Awesome](https://youtu.be/ripr3WDpcjo?t=125) 🙏
+💻💖☕ by [Waren Gonzaga](https://warengonzaga.com) | [YHWH](https://youtu.be/9vh6Dz9oh8I?t=85) 🙏
