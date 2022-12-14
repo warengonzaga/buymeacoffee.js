@@ -1,41 +1,49 @@
-var $cMI0G$axios = require("axios");
+var $1ZQrD$axios = require("axios");
 
-var $4540a25bc7f58d61$exports = {};
-'use strict';
+function $parcel$defineInteropFlag(a) {
+  Object.defineProperty(a, '__esModule', {value: true, configurable: true});
+}
+function $parcel$export(e, n, v, s) {
+  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
+}
+function $parcel$interopDefault(a) {
+  return a && a.__esModule ? a.default : a;
+}
 
-var $5d0899154dd6371f$exports = {};
-'use strict';
-$5d0899154dd6371f$exports = {
-    baseURL: 'https://developers.buymeacoffee.com/api/v1'
+$parcel$defineInteropFlag(module.exports);
+
+$parcel$export(module.exports, "default", () => $5e2f01247a5d6f10$export$2e2bcd8739ae039);
+
+var $e8acabe42e7a5abd$export$2e2bcd8739ae039 = {
+    baseURL: "https://developers.buymeacoffee.com/api/v1"
 };
 
 
-const { baseURL: $4540a25bc7f58d61$var$baseURL  } = $5d0899154dd6371f$exports;
-const $4540a25bc7f58d61$var$requester = $cMI0G$axios.create({
-    baseURL: $4540a25bc7f58d61$var$baseURL,
-    responseType: 'json',
+const $bf8f2aa78eaacdbd$var$requester = ($parcel$interopDefault($1ZQrD$axios)).create({
+    baseURL: $e8acabe42e7a5abd$export$2e2bcd8739ae039.baseURL,
+    responseType: "json",
     validateStatus: (status)=>status === 200
 });
-$4540a25bc7f58d61$exports = $4540a25bc7f58d61$var$requester;
+var $bf8f2aa78eaacdbd$export$2e2bcd8739ae039 = $bf8f2aa78eaacdbd$var$requester;
 
 
-class $349a00930b14e029$var$BMC {
+class $5e2f01247a5d6f10$export$2e2bcd8739ae039 {
     constructor(access_token){
         this.access_token = access_token;
     }
     Supporters() {
-        return this._sendRequest('supporters');
+        return this._sendRequest("supporters");
     }
     Subscriptions() {
-        return this._sendRequest('subscriptions');
+        return this._sendRequest("subscriptions");
     }
     Extras() {
-        return this._sendRequest('extras');
+        return this._sendRequest("extras");
     }
     async _sendRequest(path) {
-        const response = await $4540a25bc7f58d61$exports.get(path, {
+        const response = await $bf8f2aa78eaacdbd$export$2e2bcd8739ae039.get(path, {
             headers: {
-                Authorization: 'Bearer ' + this.access_token
+                Authorization: "Bearer " + this.access_token
             },
             validateStatus: function(status) {
                 return status >= 200 && status < 300; // default
@@ -44,7 +52,6 @@ class $349a00930b14e029$var$BMC {
         return response.data;
     }
 }
-module.exports = $349a00930b14e029$var$BMC;
 
 
 //# sourceMappingURL=main.js.map
