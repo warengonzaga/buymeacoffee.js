@@ -4,16 +4,30 @@
 
 [![repo banner](.github/img/repo_banner.png)](https://buymeacoffee.js.org)
 
-A simple and lightweight but powerful **official Node.JS client** for **[Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API**.
+A simple and lightweight but powerful **official Bun-first client** for **[Buy Me A Coffee](https://buymeacoff.ee/?via=WarenGonzaga) API** with **Node.js compatibility**.
 
 ## ⚡ Features
 
 - Simple Usage
 - Lightweight
+- Bun-First Developer Experience
 - Supporters Data
 - Subscriptions Data
 - Extras Data
-- Supports NodeJS v10+ LTS
+- Supports Bun and Node.js
+
+## 🚀 Development
+
+This project now uses Bun as the primary package manager, test runner, and local workflow.
+
+```bash
+bun install
+bun run lint
+bun test
+bun run build
+```
+
+If you need a Node.js-only install for compatibility checks, `npm install` and `npm run build` still work.
 
 ## 📖 Documentation
 

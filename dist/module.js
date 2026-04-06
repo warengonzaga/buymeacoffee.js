@@ -1,20 +1,20 @@
-import $f3Ts0$axios from "axios";
+import $hgUW1$axios from "axios";
 
 
-var $e5d4daa4fe781ca0$export$2e2bcd8739ae039 = {
+var $c04235eee8e32194$export$2e2bcd8739ae039 = {
     baseURL: "https://developers.buymeacoffee.com/api/v1"
 };
 
 
-const $363d107d403bcf21$var$requester = $f3Ts0$axios.create({
-    baseURL: $e5d4daa4fe781ca0$export$2e2bcd8739ae039.baseURL,
+const $ce3750ab537d0183$var$requester = (0, $hgUW1$axios).create({
+    baseURL: (0, $c04235eee8e32194$export$2e2bcd8739ae039).baseURL,
     responseType: "json",
     validateStatus: (status)=>status === 200
 });
-var $363d107d403bcf21$export$2e2bcd8739ae039 = $363d107d403bcf21$var$requester;
+var $ce3750ab537d0183$export$2e2bcd8739ae039 = $ce3750ab537d0183$var$requester;
 
 
-class $a8e101027d325e52$export$2e2bcd8739ae039 {
+class $149c1bd638913645$export$2e2bcd8739ae039 {
     constructor(access_token){
         this.access_token = access_token;
     }
@@ -28,11 +28,11 @@ class $a8e101027d325e52$export$2e2bcd8739ae039 {
         return this._sendRequest("extras");
     }
     async _sendRequest(path) {
-        const response = await $363d107d403bcf21$export$2e2bcd8739ae039.get(path, {
+        const response = await (0, $ce3750ab537d0183$export$2e2bcd8739ae039).get(path, {
             headers: {
-                Authorization: "Bearer " + this.access_token
+                Authorization: `Bearer ${this.access_token}`
             },
-            validateStatus: function(status) {
+            validateStatus: (status)=>{
                 return status >= 200 && status < 300; // default
             }
         });
@@ -41,5 +41,5 @@ class $a8e101027d325e52$export$2e2bcd8739ae039 {
 }
 
 
-export {$a8e101027d325e52$export$2e2bcd8739ae039 as default};
+export {$149c1bd638913645$export$2e2bcd8739ae039 as default};
 //# sourceMappingURL=module.js.map

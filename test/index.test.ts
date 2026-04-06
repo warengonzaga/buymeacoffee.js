@@ -1,79 +1,98 @@
-import requester from "../src/requester";
-const moxios=  require("moxios")
+import { afterEach, expect, mock, spyOn, test } from "bun:test";
 
-const {
-  supportersTemplate,
-  subscriptionsTemplate,
+import BMC from "../src/index";
+import requester from "../src/requester";
+import {
   extrasTemplate,
-} = require("./api-templates");
+  subscriptionsTemplate,
+  supportersTemplate,
+} from "./api-templates";
 
 const token = "let-me-pass";
-import  BMC from "../src/index";
 
-beforeEach(() => moxios.install(requester));
-afterEach(() => moxios.uninstall(requester));
+afterEach(() => {
+  mock.restore();
+});
 
-test("Supporters retreival", async () => {
-  moxios.stubRequest("supporters", {
-    status: 200,
-    response: supportersTemplate,
-  });
-  const BMCInstance = new BMC(token);
-  const supportersData = await BMCInstance.Supporters();
+test("Supporters retrieval", async () => {
+  const getSpy = spyOn(requester, "get").mockResolvedValue({
+    data: supportersTemplate,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const supportersData = await bmcInstance.Supporters();
+
   expect(supportersData).toStrictEqual(supportersTemplate);
+  expect(getSpy).toHaveBeenCalledWith(
+    "supporters",
+    expect.objectContaining({
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }),
+  );
 });
-test("Supporters retreival failure", async () => {
-  moxios.stubRequest("supporters", {
-    status: 400,
-    response: supportersTemplate,
-  });
-  const BMCInstance = new BMC(token);
-  await expect(BMCInstance.Supporters()).rejects.toThrow();
+
+test("Supporters retrieval failure", async () => {
+  const error = new Error("Request failed");
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Supporters()).rejects.toThrow("Request failed");
 });
-test("Supporters retreival: no data", async () => {
-  const BMCResponse = { error: "No supporters" };
-  moxios.stubRequest("supporters", {
-    status: 200,
-    response: BMCResponse,
-  });
-  const BMCInstance = new BMC(token);
-  const supportersData = await BMCInstance.Supporters();
-  expect(supportersData).toStrictEqual(BMCResponse);
+
+test("Supporters retrieval: no data", async () => {
+  const response = { error: "No supporters" };
+  spyOn(requester, "get").mockResolvedValue({
+    data: response,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const supportersData = await bmcInstance.Supporters();
+
+  expect(supportersData).toStrictEqual(response);
 });
 
 test("Subscription retrieval", async () => {
-  moxios.stubRequest("subscriptions", {
-    status: 200,
-    response: subscriptionsTemplate,
-  });
-  const BMCInstance = new BMC(token);
-  const subscriptions = await BMCInstance.Subscriptions();
+  spyOn(requester, "get").mockResolvedValue({
+    data: subscriptionsTemplate,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const subscriptions = await bmcInstance.Subscriptions();
+
   expect(subscriptions).toStrictEqual(subscriptionsTemplate);
 });
-test("Subscription retreival failure", async () => {
-  moxios.stubRequest("subscriptions", {
-    status: 400,
-    response: subscriptionsTemplate,
-  });
-  const BMCInstance = new BMC(token);
-  await expect(BMCInstance.Subscriptions()).rejects.toThrow();
+
+test("Subscription retrieval failure", async () => {
+  const error = new Error("Request failed");
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Subscriptions()).rejects.toThrow("Request failed");
 });
-test("Subscription retreival: no data", async () => {
-  const BMCResponse = { error: "No subscriptions" };
-  moxios.stubRequest("subscriptions", {
-    status: 200,
-    response: BMCResponse,
-  });
-  const BMCInstance = new BMC(token);
-  const subscriptions = await BMCInstance.Subscriptions();
-  expect(subscriptions).toStrictEqual(BMCResponse);
+
+test("Subscription retrieval: no data", async () => {
+  const response = { error: "No subscriptions" };
+  spyOn(requester, "get").mockResolvedValue({
+    data: response,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const subscriptions = await bmcInstance.Subscriptions();
+
+  expect(subscriptions).toStrictEqual(response);
 });
+
 test("Extras retrieval", async () => {
-  moxios.stubRequest("extras", {
-    status: 200,
-    response: extrasTemplate,
-  });
-  const BMCInstance = new BMC(token);
-  const extras = await BMCInstance.Extras();
+  spyOn(requester, "get").mockResolvedValue({
+    data: extrasTemplate,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const extras = await bmcInstance.Extras();
+
   expect(extras).toStrictEqual(extrasTemplate);
 });
