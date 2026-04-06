@@ -1,0 +1,65 @@
+name: Package Build
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Perform dry run without publishing
+        type: boolean
+        default: true
+  release:
+    types:
+      - published
+
+permissions:
+  contents: read
+  packages: write
+  pull-requests: write
+
+concurrency:
+  group: package-publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Build
+        run: yarn build
+
+      - name: Test
+        run: yarn test
+
+      - name: Publish
+        uses: wgtechlabs/package-build-flow-action@v2.1.1
+        with:
+          package-manager: yarn
+          registry: both
+          access: public
+          npm-token: ${{ secrets.NPM_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: ${{ github.event.inputs.dry-run || 'false' }}
