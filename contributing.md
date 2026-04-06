@@ -16,7 +16,7 @@ If you can write a code then create a pull request to this repo and I will revie
 
 ### 📝 Commit Messages
 
-This project follows the [Clean Commit](https://github.com/wgtechlabs/clean-commit) convention for commit messages. Please use the commit guidance defined in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) and [`agents.md`](./agents.md) when preparing commits for this repository.
+This project follows the [Clean Commit](https://github.com/wgtechlabs/clean-commit) convention for commit messages. Use [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) for GitHub Copilot-generated commits and [`agents.md`](./agents.md) or [`claude.md`](./claude.md) for AI agent commit guidance in this repository.
 
 ### 📖 Documentation
 
