@@ -37,7 +37,7 @@ Reference: https://github.com/wgtechlabs/clean-commit
 
 ## Examples
 
-- `⚙️ setup: add github copilot commit instructions`
+- `⚙️ setup: add GitHub Copilot commit instructions`
 - `📦 new: add buy me a coffee supporter endpoint`
 - `🔧 update (api): improve error handling`
 - `☕ chore (deps): update axios version`
