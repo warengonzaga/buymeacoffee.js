@@ -14,6 +14,10 @@ There are many ways to contribute to this open source project. Any contributions
 
 If you can write a code then create a pull request to this repo and I will review your code. Please consider to submit your pull request to the ```dev``` branch. I will auto reject if you submit your pull request to the ```main``` branch.
 
+### 📝 Commit Messages
+
+This project follows the [Clean Commit](https://github.com/wgtechlabs/clean-commit) convention for commit messages. Please use the commit guidance defined in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) and [`agents.md`](./agents.md) when preparing commits for this repository.
+
 ### 📖 Documentation
 
 (coming soon)
