@@ -6,6 +6,7 @@ node_modules
 
 # parceljs
 .parcel-cache
+dist
 
 #misc
 *.log
