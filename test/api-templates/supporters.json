@@ -19,8 +19,8 @@
       "referer": null,
       "country": null,
       "transaction_id": "sub_HjkUcn*******",
-      "payer_email": "ronald.thyu@gmail.org",
-      "payer_name": "ronald.thomas"
+      "payer_email": "test.user@example.com",
+      "payer_name": "Test User"
     }
   ],
   "first_page_url": "https://developers.buymeacoffee.com/api/v1/subscriptions?page=1",
