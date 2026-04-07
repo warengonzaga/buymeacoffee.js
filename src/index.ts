@@ -1,9 +1,8 @@
 import requester from "./requester";
 
 export default class BMC {
-
   access_token: string;
-  
+
   constructor(access_token) {
     this.access_token = access_token;
   }
@@ -23,9 +22,9 @@ export default class BMC {
   async _sendRequest(path) {
     const response = await requester.get(path, {
       headers: {
-        Authorization: "Bearer " + this.access_token,
+        Authorization: `Bearer ${this.access_token}`,
       },
-      validateStatus: function (status) {
+      validateStatus: (status) => {
         return status >= 200 && status < 300; // default
       },
     });

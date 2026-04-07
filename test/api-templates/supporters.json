@@ -1,28 +1,27 @@
 {
   "current_page": 1,
   "data": [
-      {
-          "subscription_id": 10647,
-          "subscription_cancelled_on": null,
-          "subscription_created_on": "2020-07-29 15:15:22",
-          "subscription_updated_on": "2020-07-29 15:15:22",
-          "subscription_current_period_start": "2020-07-29 15:15:18",
-          "subscription_current_period_end": "2020-08-29 15:15:18",
-          "subscription_coffee_price": "1.000",
-          "subscription_coffee_num": 1,
-          "subscription_is_cancelled": null,
-          "subscription_is_cancelled_at_period_end": null,
-          "subscription_currency": "USD",
-          "subscription_message": null,
-          "message_visibility": 1,
-          "subscription_duration_type": "month",
-          "referer": null,
-          "country": null,
-          "transaction_id": "sub_HjkUcn*******",
-          "payer_email": "ronald.thyu@gmail.org",
-          "payer_name": "ronald.thomas"
-      }
-
+    {
+      "subscription_id": 10647,
+      "subscription_cancelled_on": null,
+      "subscription_created_on": "2020-07-29 15:15:22",
+      "subscription_updated_on": "2020-07-29 15:15:22",
+      "subscription_current_period_start": "2020-07-29 15:15:18",
+      "subscription_current_period_end": "2020-08-29 15:15:18",
+      "subscription_coffee_price": "1.000",
+      "subscription_coffee_num": 1,
+      "subscription_is_cancelled": null,
+      "subscription_is_cancelled_at_period_end": null,
+      "subscription_currency": "USD",
+      "subscription_message": null,
+      "message_visibility": 1,
+      "subscription_duration_type": "month",
+      "referer": null,
+      "country": null,
+      "transaction_id": "sub_HjkUcn*******",
+      "payer_email": "test.user@example.com",
+      "payer_name": "Test User"
+    }
   ],
   "first_page_url": "https://developers.buymeacoffee.com/api/v1/subscriptions?page=1",
   "from": 1,
