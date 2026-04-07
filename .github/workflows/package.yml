@@ -62,4 +62,4 @@ jobs:
           access: public
           npm-token: ${{ secrets.NPM_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          dry-run: ${{ github.event.inputs.dry-run || 'false' }}
+          dry-run: ${{ github.event_name == 'release' && 'false' || github.event_name == 'workflow_dispatch' && toJSON(inputs.dry-run) || 'true' }}

@@ -35,7 +35,9 @@ jobs:
       - name: Prepare site artifact
         run: |
           mkdir public
-          find webpage-source -mindepth 1 -maxdepth 1 ! -name '.git' -exec cp -R {} public/ \;
+          if [ -f webpage-source/CNAME ]; then cp webpage-source/CNAME public/; fi
+          if [ -f webpage-source/index.html ]; then cp webpage-source/index.html public/; fi
+          if [ -d webpage-source/assets ]; then cp -R webpage-source/assets public/; fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
