@@ -8,6 +8,7 @@
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
+    "prepack": "parcel build",
     "lint": "biome check .",
     "format": "biome format --write .",
     "test": "bun test"
