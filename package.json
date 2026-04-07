@@ -5,10 +5,12 @@
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build",
-    "prepack": "parcel build",
+    "build": "parcel build && tsc --project tsconfig.types.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "prepack": "parcel build && tsc --project tsconfig.types.json",
     "lint": "biome check .",
     "format": "biome format --write .",
     "test": "bun test"
@@ -50,6 +52,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.10",
+    "@parcel/packager-ts": "^2.16.4",
+    "@parcel/transformer-typescript-types": "^2.16.4",
     "parcel": "^2.0.1",
     "typescript": "^4.7.2"
   },
