@@ -1,33 +1,36 @@
-var $1ZQrD$axios = require("axios");
+var $8zHUo$axios = require("axios");
+
 
 function $parcel$defineInteropFlag(a) {
   Object.defineProperty(a, '__esModule', {value: true, configurable: true});
 }
+
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
+
 function $parcel$interopDefault(a) {
   return a && a.__esModule ? a.default : a;
 }
 
 $parcel$defineInteropFlag(module.exports);
 
-$parcel$export(module.exports, "default", () => $5e2f01247a5d6f10$export$2e2bcd8739ae039);
+$parcel$export(module.exports, "default", () => $882b6d93070905b3$export$2e2bcd8739ae039);
 
-var $e8acabe42e7a5abd$export$2e2bcd8739ae039 = {
+var $dba5cd6913742fdd$export$2e2bcd8739ae039 = {
     baseURL: "https://developers.buymeacoffee.com/api/v1"
 };
 
 
-const $bf8f2aa78eaacdbd$var$requester = ($parcel$interopDefault($1ZQrD$axios)).create({
-    baseURL: $e8acabe42e7a5abd$export$2e2bcd8739ae039.baseURL,
+const $2dbaa43ff7d0c056$var$requester = (0, ($parcel$interopDefault($8zHUo$axios))).create({
+    baseURL: (0, $dba5cd6913742fdd$export$2e2bcd8739ae039).baseURL,
     responseType: "json",
     validateStatus: (status)=>status === 200
 });
-var $bf8f2aa78eaacdbd$export$2e2bcd8739ae039 = $bf8f2aa78eaacdbd$var$requester;
+var $2dbaa43ff7d0c056$export$2e2bcd8739ae039 = $2dbaa43ff7d0c056$var$requester;
 
 
-class $5e2f01247a5d6f10$export$2e2bcd8739ae039 {
+class $882b6d93070905b3$export$2e2bcd8739ae039 {
     constructor(access_token){
         this.access_token = access_token;
     }
@@ -41,11 +44,11 @@ class $5e2f01247a5d6f10$export$2e2bcd8739ae039 {
         return this._sendRequest("extras");
     }
     async _sendRequest(path) {
-        const response = await $bf8f2aa78eaacdbd$export$2e2bcd8739ae039.get(path, {
+        const response = await (0, $2dbaa43ff7d0c056$export$2e2bcd8739ae039).get(path, {
             headers: {
-                Authorization: "Bearer " + this.access_token
+                Authorization: `Bearer ${this.access_token}`
             },
-            validateStatus: function(status) {
+            validateStatus: (status)=>{
                 return status >= 200 && status < 300; // default
             }
         });
