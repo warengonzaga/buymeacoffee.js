@@ -1,14 +1,19 @@
 {
   "name": "buymeacoffee.js",
   "version": "2.0.0",
-  "description": "A simple and lightweight but powerful Node.js client for Buy Me A Coffee API",
+  "description": "A simple and lightweight but powerful Bun-first client for Buy Me A Coffee API with Node.js compatibility",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build",
-    "test": "jest"
+    "build": "parcel build && tsc --project tsconfig.types.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "prepack": "parcel build && tsc --project tsconfig.types.json",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "test": "bun test"
   },
   "repository": {
     "type": "git",
@@ -43,26 +48,17 @@
   "homepage": "https://buymeacoffee.js.org",
   "github": "https://github.com/WarenGonzaga/buymeacoffee.js",
   "dependencies": {
-    "@types/moxios": "^0.4.15",
-    "axios": "^0.30.0",
-    "moxios": "^0.4.0",
-    "source-map-loader": "^3.0.1",
-    "ts-loader": "^9.3.0",
-    "ts-node": "^10.7.0"
+    "axios": "1.14.0"
   },
   "devDependencies": {
-    "@types/jest": "^27.5.0",
-    "gulp-header": "^2.0.9",
-    "jest": "^28.0.0",
+    "@biomejs/biome": "^2.4.10",
+    "@parcel/packager-ts": "^2.16.4",
+    "@parcel/transformer-typescript-types": "^2.16.4",
     "parcel": "^2.0.1",
-    "ts-jest": "^28.0.2",
-    "typescript": "^4.7.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "typescript": "^6.0.2"
   },
   "files": [
     "dist/*"
   ],
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "bun@1.3.11"
 }
