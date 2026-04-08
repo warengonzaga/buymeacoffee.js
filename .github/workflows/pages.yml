@@ -4,12 +4,9 @@ on:
   push:
     branches:
       - main
-      - webpage
     paths:
       - .github/workflows/pages.yml
-      - CNAME
-      - index.html
-      - assets/**
+      - src/landing/**
   workflow_dispatch:
 
 permissions:
@@ -26,23 +23,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout webpage source
+      - name: Checkout repository
         uses: actions/checkout@v6.0.2
-        with:
-          ref: webpage
-          path: webpage-source
-
-      - name: Prepare site artifact
-        run: |
-          mkdir public
-          if [ -f webpage-source/CNAME ]; then cp webpage-source/CNAME public/; fi
-          if [ -f webpage-source/index.html ]; then cp webpage-source/index.html public/; fi
-          if [ -d webpage-source/assets ]; then cp -R webpage-source/assets public/; fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: src/landing
 
   deploy:
     name: Deploy
