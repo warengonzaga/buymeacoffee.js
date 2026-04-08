@@ -1,12 +1,13 @@
-import type { AxiosError } from "axios";
 import axios from "axios";
+
+export type HttpMethod = "DELETE" | "GET" | "PATCH" | "POST" | "PUT";
 
 export interface BMCErrorOptions {
   cause?: unknown;
   code?: string;
   endpoint: string;
   message: string;
-  method: "GET";
+  method: HttpMethod;
   responseData?: unknown;
   status?: number;
 }
@@ -15,7 +16,7 @@ export class BMCError extends Error {
   cause?: unknown;
   code?: string;
   endpoint: string;
-  method: "GET";
+  method: HttpMethod;
   responseData?: unknown;
   status?: number;
 
@@ -51,18 +52,22 @@ function getErrorMessage(
   return fallbackMessage;
 }
 
-export function normalizeBMCError(error: unknown, endpoint: string): BMCError {
+export function normalizeBMCError(
+  error: unknown,
+  endpoint: string,
+  method: HttpMethod = "GET",
+): BMCError {
   if (axios.isAxiosError(error)) {
-    const axiosError = error as AxiosError;
-
+    const derivedMethod =
+      (error.config?.method?.toUpperCase() as HttpMethod | undefined) ?? method;
     return new BMCError({
-      cause: axiosError,
-      code: axiosError.code,
+      cause: error,
+      code: error.code,
       endpoint,
-      message: getErrorMessage(axiosError.response?.data, axiosError.message),
-      method: "GET",
-      responseData: axiosError.response?.data,
-      status: axiosError.response?.status,
+      message: getErrorMessage(error.response?.data, error.message),
+      method: derivedMethod,
+      responseData: error.response?.data,
+      status: error.response?.status,
     });
   }
 
@@ -71,7 +76,7 @@ export function normalizeBMCError(error: unknown, endpoint: string): BMCError {
       cause: error,
       endpoint,
       message: error.message,
-      method: "GET",
+      method,
     });
   }
 
@@ -79,6 +84,6 @@ export function normalizeBMCError(error: unknown, endpoint: string): BMCError {
     cause: error,
     endpoint,
     message: "Unknown request failure",
-    method: "GET",
+    method,
   });
 }

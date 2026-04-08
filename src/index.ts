@@ -11,6 +11,7 @@ import type {
   SupportersResponse,
 } from "./types";
 
+export type { HttpMethod } from "./errors";
 export { BMCError } from "./errors";
 export type {
   ExtraPurchase,
@@ -27,39 +28,42 @@ export type {
 } from "./types";
 
 export default class BMC {
-  access_token: string;
+  readonly access_token: string;
 
   constructor(access_token: string) {
+    if (!access_token || typeof access_token !== "string") {
+      throw new Error("BMC: access_token must be a non-empty string");
+    }
     this.access_token = access_token;
   }
 
   Supporters(options: PaginationOptions = {}): Promise<SupportersResponse> {
-    return this._sendRequest("supporters", options);
+    return this.sendRequest("supporters", options);
   }
 
   Supporter(id: number): Promise<Supporter> {
-    return this._sendRequest(`supporters/${id}`);
+    return this.sendRequest(`supporters/${id}`);
   }
 
   Subscriptions(
     options: SubscriptionsOptions = {},
   ): Promise<SubscriptionsResponse> {
-    return this._sendRequest("subscriptions", options);
+    return this.sendRequest("subscriptions", options);
   }
 
   Subscription(id: number): Promise<Subscription> {
-    return this._sendRequest(`subscriptions/${id}`);
+    return this.sendRequest(`subscriptions/${id}`);
   }
 
   Extras(options: PaginationOptions = {}): Promise<ExtrasResponse> {
-    return this._sendRequest("extras", options);
+    return this.sendRequest("extras", options);
   }
 
   Extra(id: number): Promise<ExtraPurchase> {
-    return this._sendRequest(`extras/${id}`);
+    return this.sendRequest(`extras/${id}`);
   }
 
-  private async _sendRequest<T>(
+  private async sendRequest<T>(
     path: string,
     params?: PaginationOptions | SubscriptionsOptions,
   ): Promise<T> {
@@ -69,9 +73,6 @@ export default class BMC {
           Authorization: `Bearer ${this.access_token}`,
         },
         params,
-        validateStatus: (status) => {
-          return status >= 200 && status < 300; // default
-        },
       });
       return response.data;
     } catch (error) {
