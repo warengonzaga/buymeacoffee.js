@@ -135,7 +135,7 @@ Read the project's [contributing guide](https://github.com/warengonzaga/buymeaco
 
 ## 💬 Discussions
 
-For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/warengonzaga/buymeacofee.js/discussions)!
+For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/warengonzaga/buymeacoffee.js/discussions)!
 
 ## 🐛 Issues
 

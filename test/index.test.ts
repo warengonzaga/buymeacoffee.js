@@ -68,9 +68,10 @@ test("Supporters retrieval failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Supporters().catch((e: unknown) => e);
 
-  await expect(bmcInstance.Supporters()).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Supporters()).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     endpoint: "supporters",
     message: "Request failed",
     method: "GET",
@@ -142,9 +143,10 @@ test("Subscription retrieval failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Subscriptions().catch((e: unknown) => e);
 
-  await expect(bmcInstance.Subscriptions()).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Subscriptions()).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     code: "ERR_BAD_REQUEST",
     endpoint: "subscriptions",
     message: "Invalid token",
@@ -277,9 +279,10 @@ test("Extras retrieval failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Extras().catch((e: unknown) => e);
 
-  await expect(bmcInstance.Extras()).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Extras()).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     code: "ERR_BAD_REQUEST",
     endpoint: "extras",
     message: "Invalid token",
@@ -314,9 +317,10 @@ test("Supporter lookup by id failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Supporter(9999).catch((e: unknown) => e);
 
-  await expect(bmcInstance.Supporter(9999)).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Supporter(9999)).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     code: "ERR_NOT_FOUND",
     endpoint: "supporters/9999",
     message: "Supporter not found",
@@ -339,9 +343,10 @@ test("Subscription lookup by id failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Subscription(9999).catch((e: unknown) => e);
 
-  await expect(bmcInstance.Subscription(9999)).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Subscription(9999)).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     code: "ERR_NOT_FOUND",
     endpoint: "subscriptions/9999",
     message: "Subscription not found",
@@ -364,9 +369,10 @@ test("Extra lookup by id failure", async () => {
   spyOn(requester, "get").mockRejectedValue(error);
 
   const bmcInstance = new BMC(token);
+  const thrown = await bmcInstance.Extra(9999).catch((e: unknown) => e);
 
-  await expect(bmcInstance.Extra(9999)).rejects.toBeInstanceOf(BMCError);
-  await expect(bmcInstance.Extra(9999)).rejects.toMatchObject({
+  expect(thrown).toBeInstanceOf(BMCError);
+  expect(thrown).toMatchObject({
     code: "ERR_NOT_FOUND",
     endpoint: "extras/9999",
     message: "Extra not found",
