@@ -1,5 +1,17 @@
-# BuyMeaCoffeeJS [![huntr](https://cdn.huntr.dev/huntr_security_badge_mono.svg)](https://huntr.dev)
+# Security Policy
 
-If you discover any security related issue in this repository or in this project, please contact me with this email [security@warengonzaga.com](mailto:security@warengonzaga.com) or [submit a vulnerability report](https://huntr.dev/bounties/disclose/) via [huntr.dev](https://huntr.dev).
+## Reporting a Vulnerability
 
-Thanks for helping me making my open-source projects safe for everyone, I really appreciate it.
+If you discover a security vulnerability in this project, please report it responsibly by emailing **[opensource@warengonzaga.com](mailto:opensource@warengonzaga.com)**.
+
+Please **do not** open a public issue for security vulnerabilities.
+
+## What to Include
+
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+
+## Response
+
+You can expect an initial response within 48 hours. I take all security reports seriously and appreciate your help keeping this project safe for everyone.
