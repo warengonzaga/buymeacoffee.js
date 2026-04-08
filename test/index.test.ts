@@ -10,6 +10,19 @@ import {
 
 const token = "let-me-pass";
 
+test("BMC constructor throws on empty token", () => {
+  expect(() => new BMC("")).toThrow(
+    "BMC: access_token must be a non-empty string",
+  );
+});
+
+test("BMC constructor throws on invalid token type", () => {
+  // biome-ignore lint/suspicious/noExplicitAny: testing invalid input at runtime boundary
+  expect(() => new BMC(null as any)).toThrow(
+    "BMC: access_token must be a non-empty string",
+  );
+});
+
 afterEach(() => {
   mock.restore();
 });
@@ -232,4 +245,133 @@ test("Extra lookup by id", async () => {
       },
     }),
   );
+});
+
+test("Extras retrieval with page param", async () => {
+  const getSpy = spyOn(requester, "get").mockResolvedValue({
+    data: extrasTemplate,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const extras = await bmcInstance.Extras({ page: 2 });
+
+  expect(extras).toStrictEqual(extrasTemplate);
+  expect(getSpy).toHaveBeenCalledWith(
+    "extras",
+    expect.objectContaining({
+      params: { page: 2 },
+    }),
+  );
+});
+
+test("Extras retrieval failure", async () => {
+  const error = {
+    code: "ERR_BAD_REQUEST",
+    isAxiosError: true,
+    message: "Request failed",
+    response: {
+      data: { message: "Invalid token" },
+      status: 401,
+    },
+  };
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Extras()).rejects.toBeInstanceOf(BMCError);
+  await expect(bmcInstance.Extras()).rejects.toMatchObject({
+    code: "ERR_BAD_REQUEST",
+    endpoint: "extras",
+    message: "Invalid token",
+    method: "GET",
+    name: "BMCError",
+    status: 401,
+  });
+});
+
+test("Extras retrieval: no data", async () => {
+  const response = { error: "No extras" };
+  spyOn(requester, "get").mockResolvedValue({
+    data: response,
+  } as Awaited<ReturnType<typeof requester.get>>);
+
+  const bmcInstance = new BMC(token);
+  const extras = await bmcInstance.Extras();
+
+  expect(extras).toStrictEqual(response);
+});
+
+test("Supporter lookup by id failure", async () => {
+  const error = {
+    code: "ERR_NOT_FOUND",
+    isAxiosError: true,
+    message: "Not Found",
+    response: {
+      data: { message: "Supporter not found" },
+      status: 404,
+    },
+  };
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Supporter(9999)).rejects.toBeInstanceOf(BMCError);
+  await expect(bmcInstance.Supporter(9999)).rejects.toMatchObject({
+    code: "ERR_NOT_FOUND",
+    endpoint: "supporters/9999",
+    message: "Supporter not found",
+    method: "GET",
+    name: "BMCError",
+    status: 404,
+  });
+});
+
+test("Subscription lookup by id failure", async () => {
+  const error = {
+    code: "ERR_NOT_FOUND",
+    isAxiosError: true,
+    message: "Not Found",
+    response: {
+      data: { message: "Subscription not found" },
+      status: 404,
+    },
+  };
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Subscription(9999)).rejects.toBeInstanceOf(BMCError);
+  await expect(bmcInstance.Subscription(9999)).rejects.toMatchObject({
+    code: "ERR_NOT_FOUND",
+    endpoint: "subscriptions/9999",
+    message: "Subscription not found",
+    method: "GET",
+    name: "BMCError",
+    status: 404,
+  });
+});
+
+test("Extra lookup by id failure", async () => {
+  const error = {
+    code: "ERR_NOT_FOUND",
+    isAxiosError: true,
+    message: "Not Found",
+    response: {
+      data: { message: "Extra not found" },
+      status: 404,
+    },
+  };
+  spyOn(requester, "get").mockRejectedValue(error);
+
+  const bmcInstance = new BMC(token);
+
+  await expect(bmcInstance.Extra(9999)).rejects.toBeInstanceOf(BMCError);
+  await expect(bmcInstance.Extra(9999)).rejects.toMatchObject({
+    code: "ERR_NOT_FOUND",
+    endpoint: "extras/9999",
+    message: "Extra not found",
+    method: "GET",
+    name: "BMCError",
+    status: 404,
+  });
 });
