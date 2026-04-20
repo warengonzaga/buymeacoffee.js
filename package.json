@@ -1,6 +1,6 @@
 {
   "name": "buymeacoffee.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A simple and lightweight but powerful Bun-first client for Buy Me A Coffee API with Node.js compatibility",
   "source": "src/index.ts",
   "main": "dist/main.js",
