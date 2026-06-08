@@ -8,6 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [2.0.2] - 2026-06-08
+
+### Changed
+
+- align changelog entry format
+- normalize changelog capitalization
+- fix changelog entries for v2.0.1
+- bump axios from 1.16.0 to 1.16.1 in the minor-and-patch group (#85)
+- bump axios from 1.15.2 to 1.16.0 in the minor-and-patch group (#82)
+- bump axios from 1.15.0 to 1.15.2 in the minor-and-patch group (#81)
+- bump axios from 1.14.0 to 1.15.0 in the minor-and-patch group (#79)
+- bump actions/upload-pages-artifact from 4 to 5 (#80)
+
+### Security
+
+- upgrade axios from 1.16.1 to 1.17.0 (#87)
+
 ## [2.0.1] - 2026-04-08
 
 ### Changed
