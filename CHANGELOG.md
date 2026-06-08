@@ -16,7 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - rename code_of_conduct.md to CODE_OF_CONDUCT.md
 - rename contributing.md to CONTRIBUTING.md
 - rename claude.md to CLAUDE.md
-- Bump actions/upload-pages-artifact from 3 to 4 (#73)
+- bump axios from 1.14.0 to 1.16.1
+- bump actions/upload-pages-artifact from 4 to 5
 - Bump wgtechlabs/release-build-flow-action from 1.6.0 to 1.7.0 (#74)
 - Bump actions/setup-node from 4 to 6 (#75)
 - Bump actions/checkout from 4 to 6 (#76)
@@ -52,10 +53,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bump the npm_and_yarn group across 1 directory with 11 updates (#66)
 - bump the npm_and_yarn group across 1 directory with 20 updates (#65)
 - update funding info
-- update funding info
 - add buymeacoffee in funding file
 
 ### Removed
 
 - exclude dist artifacts from version control
-
