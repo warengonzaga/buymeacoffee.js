@@ -16,8 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - rename code_of_conduct.md to CODE_OF_CONDUCT.md
 - rename contributing.md to CONTRIBUTING.md
 - rename claude.md to CLAUDE.md
-- bump axios from 1.14.0 to 1.16.1
-- bump actions/upload-pages-artifact from 4 to 5
+- Bump axios from 1.14.0 to 1.16.1
+- Bump actions/upload-pages-artifact from 4 to 5
 - Bump wgtechlabs/release-build-flow-action from 1.6.0 to 1.7.0 (#74)
 - Bump actions/setup-node from 4 to 6 (#75)
 - Bump actions/checkout from 4 to 6 (#76)
