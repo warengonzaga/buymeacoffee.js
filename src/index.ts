@@ -31,7 +31,7 @@ export default class BMC {
   readonly access_token: string;
 
   constructor(access_token: string) {
-    if (!access_token || typeof access_token !== "string") {
+    if (typeof access_token !== "string" || !access_token.trim()) {
       throw new Error("BMC: access_token must be a non-empty string");
     }
     this.access_token = access_token;
@@ -42,6 +42,7 @@ export default class BMC {
   }
 
   Supporter(id: number): Promise<Supporter> {
+    this.validateId(id);
     return this.sendRequest(`supporters/${id}`);
   }
 
@@ -52,6 +53,7 @@ export default class BMC {
   }
 
   Subscription(id: number): Promise<Subscription> {
+    this.validateId(id);
     return this.sendRequest(`subscriptions/${id}`);
   }
 
@@ -60,7 +62,14 @@ export default class BMC {
   }
 
   Extra(id: number): Promise<ExtraPurchase> {
+    this.validateId(id);
     return this.sendRequest(`extras/${id}`);
+  }
+
+  private validateId(id: number): void {
+    if (!Number.isInteger(id) || id <= 0) {
+      throw new Error("BMC: id must be a positive integer");
+    }
   }
 
   private async sendRequest<T>(

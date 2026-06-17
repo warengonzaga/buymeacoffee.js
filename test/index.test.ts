@@ -23,6 +23,12 @@ test("BMC constructor throws on invalid token type", () => {
   );
 });
 
+test("BMC constructor throws on whitespace token", () => {
+  expect(() => new BMC("   ")).toThrow(
+    "BMC: access_token must be a non-empty string",
+  );
+});
+
 afterEach(() => {
   mock.restore();
 });
@@ -209,6 +215,25 @@ test("Supporter lookup by id", async () => {
   );
 });
 
+test("Supporter lookup throws on invalid id", () => {
+  const bmcInstance = new BMC(token);
+  expect(() => bmcInstance.Supporter(Number.NaN)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+  expect(() => bmcInstance.Supporter(Number.POSITIVE_INFINITY)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+  expect(() => bmcInstance.Supporter(-1)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+  expect(() => bmcInstance.Supporter(0)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+  expect(() => bmcInstance.Supporter(1.5)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+});
+
 test("Subscription lookup by id", async () => {
   const getSpy = spyOn(requester, "get").mockResolvedValue({
     data: subscriptionsTemplate.data[0],
@@ -230,6 +255,13 @@ test("Subscription lookup by id", async () => {
   );
 });
 
+test("Subscription lookup throws on invalid id", () => {
+  const bmcInstance = new BMC(token);
+  expect(() => bmcInstance.Subscription(-1)).toThrow(
+    "BMC: id must be a positive integer",
+  );
+});
+
 test("Extra lookup by id", async () => {
   const getSpy = spyOn(requester, "get").mockResolvedValue({
     data: extrasTemplate.data[0],
@@ -246,6 +278,13 @@ test("Extra lookup by id", async () => {
         Authorization: `Bearer ${token}`,
       },
     }),
+  );
+});
+
+test("Extra lookup throws on invalid id", () => {
+  const bmcInstance = new BMC(token);
+  expect(() => bmcInstance.Extra(1.5)).toThrow(
+    "BMC: id must be a positive integer",
   );
 });
 
