@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [2.0.3] - 2026-07-04
+
+### Changed
+
+- bump actions/checkout from 6 to 7 (#91)
+- bump axios from 1.18.0 to 1.18.1 in the minor-and-patch group (#92)
+- validate token and resource IDs
+- review PR feedback
+- bump wgtechlabs/package-build-flow-action from 2.1.1 to 2.1.2 (#88)
+- bump axios from 1.17.0 to 1.18.0 in the minor-and-patch group (#89)
+
 ## [2.0.2] - 2026-06-08
 
 ### Changed
