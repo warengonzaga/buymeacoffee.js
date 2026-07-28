@@ -33,17 +33,3 @@ updates:
     labels:
       - "security"
       - "infra"
-
-  # Docker base image
-  - package-ecosystem: "docker"
-    directory: "/"
-    target-branch: "dev"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 3
-    commit-message:
-      prefix: "☕ chore"
-    labels:
-      - "security"
-      - "infra"
