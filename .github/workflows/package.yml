@@ -19,9 +19,10 @@ jobs:
       - uses: actions/checkout@v7
       - uses: oven-sh/setup-bun@v2
       - run: bun install
-      - uses: wgtechlabs/package-build-flow-action@v2.1.2
+      - uses: wgtechlabs/package-build-flow-action@v2.2.0
         with:
           npm-token: ${{ secrets.NPM_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           registry: 'both'
           package-manager: 'bun'
+          publish-enabled: ${{ github.event_name != 'pull_request' }}
