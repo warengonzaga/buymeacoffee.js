@@ -25,3 +25,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           registry: 'both'
           package-manager: 'bun'
+          publish-enabled: ${{ github.event_name != 'pull_request' }}
